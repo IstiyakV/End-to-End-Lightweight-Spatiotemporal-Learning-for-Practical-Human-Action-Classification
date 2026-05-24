@@ -48,10 +48,10 @@ To ensure structured navigation for researchers, developers, and peer-reviewers,
 The local research workstation module containing the Tkinter-based interactive GUI app (`HAR Control Center`).
 * **Visual Graph Builder:** Construct custom convolutional network layers and trace dimensions.
 * **Stateful Monitor:** Training loop supervisor featuring live pause, resume, and history-safe retraining.
-* **Baseline Suite:** Preloaded with the three model weights discussed in the paper:
+* **Baseline Suite:** Preloaded with model weights discussed in the paper:
   1. `R(2+1)D-Light 300k` (303,576 parameters, 82.06% accuracy on UCF101)
   2. `Plain 3D CNN 292k` (292,325 parameters baseline)
-  3. `R3D-18 Backbone` (Kinetics pre-trained weights)
+  3. `R3D-18 Backbone` *(Note: Exceeds GitHub's 100MB limit. Download the ~127MB weights from Zenodo)*
 * **Logs & Metrics:** Complete TensorBoard run event logs and accuracy metrics reports.
 * **Auto-Launchers:** One-click double-click scripts (`run_gui.bat` / `run_gui.sh`) that set up virtual environments and install libraries.
 
@@ -82,7 +82,8 @@ Polished Jupyter Notebook training pipelines pre-configured to run on cloud T4 G
 ├── Desktop-App/                # Standalone Desktop GUI Control Center
 │   ├── gui/                    # Sidebar layout frames and background thread services
 │   ├── har/                    # Core deep learning Torch package (config, models, loaders)
-│   ├── results/                # Checkpoints (300k, 292k, R3D-18), metrics & curves
+│   ├── results/                # Checkpoints, metrics & curves
+│   │   ├── checkpoints/        # Note: 127MB R3D-18 Kinetics model is hosted on Zenodo
 │   ├── Sample-Test/            # Folder to drop video clips for local GUI testing
 │   ├── images/                 # User guide illustrated screenshots
 │   ├── run_gui.bat             # Windows one-click auto-setup batch script
@@ -213,6 +214,7 @@ Our system enables serverless, high-speed testing of live YouTube streaming clip
 ### Launch Local Web Server:
 ```bash
 cd Web-api
+pip install -r requirements.txt
 python app.py
 ```
 

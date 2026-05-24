@@ -4,6 +4,12 @@ Welcome to the **HAR Control Center**, the native desktop application for visual
 
 This standalone module serves as an interactive deep learning research workbench. Researchers can visually compile custom 3D neural topologies, launch stateful training runs (with live pause, resume, and retrain), track epoch curves, analyze SOTA parameter/FLOP diagnostics, and execute local video inference overlays.
 
+<p align="left">
+  <a href="#installation">
+    <img src="https://img.shields.io/badge/%E2%9A%A1%20Quick%20Start-Installation%20%26%20Setup-blueviolet?style=for-the-badge" alt="Quick Installation Guide">
+  </a>
+</p>
+
 ---
 
 ## 🎨 Application Screenshots & Interface Guide
@@ -108,6 +114,8 @@ The **SOTA Bench** panel provides tools to compare your custom model directly ag
   * **Historical Reference:** Consult the built-in reference grid showing published academic benchmark stats (accuracy, model type, parameters, and GFLOPs) for rapid academic citation compiling.
 
 ---
+
+<div id="installation"></div>
 
 ## 🚀 One-Click Quick Start (Auto-Setup)
 

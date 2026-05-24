@@ -8,7 +8,7 @@ This standalone module serves as an interactive deep learning research workbench
 
 ## 🎨 Application Screenshots & Interface Guide
 
-This native CustomTkinter workbench provides 5 advanced graphical panels, allowing researchers to fully control the deep learning lifecycle without writing a single line of code:
+This native CustomTkinter workbench provides 8 advanced graphical panels, allowing researchers to fully control the deep learning lifecycle without writing a single line of code:
 
 ### 1. Unified Research Dashboard
 The main dashboard displays active project status, live model metrics, precision/recall bar charts, confusion matrices, and top-performing action classes:
@@ -75,6 +75,37 @@ The **Monitor** panel is a dashboard that showcases live spatiotemporal training
   * **Learning Rate & Duration Curves:** Tracks optimizer step rates and epoch speeds (seconds per epoch) to detect server performance or scheduler stepping.
   * **Execution Controls:** Control the training process directly with `⏸ Pause`, `▶ Resume`, and `🛑 Stop` buttons at the top.
   * **Interactive Console & Logs:** Read detailed traceback logs, batch speed stats, and evaluation matrices inside the scrollable *Live Output Console*. Click the **TensorBoard** shortcut to spawn a local TensorBoard tracking instance!
+
+### 7. Interactive Model Tester (Local & YouTube Streaming)
+The **Model Tester** panel allows running real-time video inference, generating spatiotemporal attention heatmaps via Grad-CAM, and analyzing top class probabilities.
+
+![Model Tester](images/model_tester.png)
+
+* **Instructions & Actions:**
+  * **Select Model Checkpoint:** Drop down the checkpoint menu to pick an active model (e.g., `R(2+1)D-Light 300k`). Or click `📥 Load File` to import external weights.
+  * **Inference Mode Selection:** Choose between the *Local Video* tab (to select clips from disk) and the *YouTube Stream* tab (for live streaming test URL analysis).
+  * **YouTube Test Suggestions:** Inside the *YouTube Stream* tab, click on any of the **💡 Test Suggestions** (Clip 1 to Clip 6) to instantly inject the stream URL into the input entry box and copy it to your system clipboard.
+  * **Run Prediction / Stream Live:** For local videos, toggle `Generate Grad-CAM` and click `Run Local Prediction` to start. For YouTube streams, click `Stream & Detect Live` (or click `Real Time Test (Hardware Webcam)` to test your webcam).
+  * **Top-5 Class Probabilities:** Monitor live visual bar meters showing the model's confidence distribution for the top-5 classes (e.g. `IceDancing: 69.0%`).
+  * **Stream Session Analytics:** Inspect the chronological *Activity Timeline* canvas (color-coded action intervals) and cumulative primary action shares to capture spatiotemporal behaviors in long streams.
+  * **Grad-CAM Attention Preview:** View the live spatiotemporal Grad-CAM heatmap preview on the right (overlaying key regions of motion attention).
+
+### 8. Comprehensive State-of-the-Art (SOTA) Benchmarking
+The **SOTA Bench** panel provides tools to compare your custom model directly against legendary deep learning architectures (e.g. VideoMAE, TimeSformer, ViViT, I3D, etc.).
+
+![SOTA Benchmark](images/sota_benchmark.png)
+
+* **Instructions & Actions:**
+  * **Select Base Model & Video Source:** Pick your custom model and load a local test video or paste a YouTube URL.
+  * **SOTA Models to Benchmark:** Check the boxes for the baseline models you want to compare against (VideoMAE, TimeSformer, ViViT, R(2+1)D-18, S3D, Swin3D-T, MViT v2.5).
+  * **Execute Benchmark:** Click `▶ Start SOTA Benchmark` to launch concurrent asynchronous evaluations across all selected models on your system device.
+  * **Benchmark Results Grid:** Analyze the live comparative leaderboard:
+    * **Prediction & Confidence:** Contrast predictions and active probability weights between models.
+    * **Latency Comparison:** Compare processing latency in milliseconds (e.g., `Ours R(2+1)D: 657ms` vs `TimeSformer: 5111ms`).
+    * **Parameter Size & FLOPs:** Track architectural efficiency (parameters in millions, and computational complexity in GFLOPs).
+    * **Summary Insight:** The tool automatically computes relative speedups and scale metrics (e.g. *Our model is 399x smaller than TimeSformer (304K vs 121M)*).
+    * **Export Diagnostics:** Click `Export .md` or `Export .pdf` to save complete benchmark summaries as academic report sheets.
+  * **Historical Reference:** Consult the built-in reference grid showing published academic benchmark stats (accuracy, model type, parameters, and GFLOPs) for rapid academic citation compiling.
 
 ---
 

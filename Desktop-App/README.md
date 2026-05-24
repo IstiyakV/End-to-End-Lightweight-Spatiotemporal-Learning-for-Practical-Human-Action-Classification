@@ -186,6 +186,7 @@ Desktop-App/
 ├── Sample-Test/              # Folder to drop video clips for local testing
 ├── gui.py                    # Main app runner entrypoint
 ├── gui_settings.json         # Window placement and theme configurations
+├── requirements.txt          # Python dependency library list
 ├── run_gui.bat               # Windows one-click auto-setup script
 └── run_gui.sh                # Linux/macOS one-click auto-setup script
 ```

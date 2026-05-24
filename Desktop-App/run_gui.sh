@@ -32,7 +32,7 @@ python3 -m pip install --upgrade pip -q
 # Install dependencies
 echo "📥 Installing Pinned Dependencies (customtkinter, PyTorch, etc.)..."
 echo "This may take a minute. Please wait..."
-pip install -r ../requirements.txt -q
+pip install -r requirements.txt -q
 if [ $? -ne 0 ]; then
     echo "❌ ERROR: Dependency installation failed."
     exit 1

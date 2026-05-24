@@ -12,6 +12,48 @@ This standalone module serves as an interactive deep learning research workbench
 
 ---
 
+## 📋 System Requirements & Prerequisites
+
+Before running the application, make sure your system satisfies the following hardware and software specifications:
+
+### 1. Operating System Compatibility
+* **Windows**: Windows 10 or 11 (64-bit)
+* **Linux**: Ubuntu 20.04 LTS, 22.04 LTS, or newer derivatives
+* **macOS**: macOS 11 Big Sur or newer (supports both Intel and Apple Silicon processors)
+
+### 2. Python Environment (Mandatory)
+The application is built on top of **Python 3.9, 3.10, or 3.11** (Python 3.10 or 3.11 is highly recommended for optimal performance and compatibility).
+* **Official Python Installation Guide:**
+  1. **Download:** Go to the official [Python Downloads page](https://www.python.org/downloads/) and download the appropriate installer for your OS.
+  2. **Install (Windows):** Run the `.exe` installer. **CRITICAL:** Make sure to check the box that says **"Add Python.exe to PATH"** before clicking *Install Now*.
+  3. **Install (Linux/Ubuntu):** Python is usually pre-installed. If missing, install it along with `pip` and `venv` tools by executing:
+     ```bash
+     sudo apt update
+     sudo apt install python3 python3-pip python3-venv
+     ```
+  4. **Install (macOS):** Use the official `.pkg` installer or install via Homebrew:
+     ```bash
+     brew install python
+     ```
+  5. **Verification:** Open your terminal (PowerShell/Command Prompt on Windows, Bash on Linux/macOS) and run:
+     ```bash
+     python --version
+     # or on some systems:
+     python3 --version
+     ```
+     *(Make sure it displays `Python 3.9.x`, `3.10.x`, or `3.11.x`)*
+
+### 3. Hardware Requirements
+* **Memory (RAM):** 8 GB minimum (16 GB or higher recommended for caching dataset arrays in-memory).
+* **Storage Space:** 500 MB of free storage space for application files, plus up to 2 GB for backbone checkpoint downloads and cached dataset vectors.
+* **Processor (CPU):** Multicore Intel/AMD x86_64 CPU (or Apple M-series Silicon) with AVX2 instruction support.
+* **Graphics (GPU - Optional but Recommended):** 
+  * NVIDIA GPU with Tensor Cores (GTX 10-series, 16-series, RTX-series or newer).
+  * 4 GB of dedicated VRAM minimum (6 GB+ recommended to enable mixed-precision AMP training).
+  * Refer to the [NVIDIA CUDA GPU Acceleration Guide](#-nvidia-cuda-gpu-acceleration-guide) below to activate hardware acceleration.
+
+---
+
 ## 🎨 Application Screenshots & Interface Guide
 
 This native CustomTkinter workbench provides 8 advanced graphical panels, allowing researchers to fully control the deep learning lifecycle without writing a single line of code:

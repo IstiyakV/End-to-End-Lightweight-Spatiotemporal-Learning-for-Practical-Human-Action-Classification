@@ -249,7 +249,7 @@ Please cite our journal publication in your research:
 
 ```bibtex
 @article{human_action_classification_2026,
-  author    = {The Authors},
+  author    = {Kazi Md Istiyak Hossain and Md Fahim Razi Prantik and Rony Shaha and Kaushik Sarker and Md Mahibul Hasan},
   title     = {End-to-End Lightweight Spatiotemporal Learning for Practical Human Action Classification},
   journal   = {The Visual Computer},
   publisher = {Springer Nature},

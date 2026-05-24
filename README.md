@@ -82,8 +82,8 @@ To install Python dependencies globally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/[GitHub URL].git
-cd [GitHub URL]
+git clone https://github.com/IstiyakV/End-to-End-Lightweight-Spatiotemporal-Learning-for-Practical-Human-Action-Classification.git
+cd End-to-End-Lightweight-Spatiotemporal-Learning-for-Practical-Human-Action-Classification
 
 # Install all machine learning, web, and GUI dependencies
 pip install -r requirements.txt

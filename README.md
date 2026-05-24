@@ -92,6 +92,76 @@ pip install -r requirements.txt
 
 ---
 
+## 📊 Dataset Ingestion & Official Downloads
+
+To train or evaluate our compact models, download the official spatiotemporal video benchmarks from the following verified archives:
+
+* **UCF101 Dataset:**
+  * **Official Portal:** [UCF101 Action Recognition](https://www.crcv.ucf.edu/data/UCF101.php)
+  * **Direct Dataset Download:** [UCF101.rar (~6.5 GB)](https://www.crcv.ucf.edu/data/UCF101/UCF101.rar)
+  * **Direct Class Annotations:** [UCF101 Train/Test Splits](https://www.crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-RecognitionTask.zip)
+* **Kinetics-700 Dataset:**
+  * **Official Portal:** [Kinetics Dataset on DeepMind](https://github.com/google-deepmind/kinetics-dataset)
+  * **Consolidated Hugging Face Host:** [Kinetics-700 HF Dataset Archive](https://huggingface.co/datasets/atalaydenknalbant/Kinetics-700)
+  
+*Note: Our custom multi-threaded downloader inside `Google-Colab/Kinetics700_HAR_Pipeline.ipynb` is pre-configured to stochastically fetch and downscale these Kinetics-700 archives on-the-fly to bound your local SSD footprint.*
+
+---
+
+## 🏋️ Model Training & Testing Guide
+
+You can train and evaluate the spatiotemporal classifiers using either the local Python CLI scripts or the interactive **HAR Control Center** GUI app.
+
+### 1. Training from Scratch
+To start a PyTorch training session for our factorised `R(2+1)D-Light` (300k parameter) network on the UCF101 dataset:
+```bash
+# Navigate to the Desktop-App directory
+cd Desktop-App
+
+# Launch CLI training with OneCycleLR scheduler and mixed-precision (FP16)
+python -m har.train --model r21d_light --epochs 100 --batch_size 8 --lr 0.0001
+```
+*Parameters:*
+* `--model`: Set to `r21d_light` (advanced 300k spatiotemporal block) or `plain` (plain 3D CNN baseline).
+* `--batch_size`: Pinned physical batch size (default: 8, optimized for 6GB consumer GPUs).
+
+### 2. Evaluating Model Accuracy & Generalization
+To run a strict evaluation pass against the 20% validation split, outputting Top-K accuracies, a precision-recall metrics report, and a confusion matrix:
+```bash
+python -m har.evaluate --model r21d_light --weight results/checkpoints/ucf101_paper_x112_b16_l2_d30_300k_best.pth
+```
+
+### 3. Spatiotemporal Visual Interpretability (Grad-CAM)
+To compute and export Grad-CAM spatiotemporal activation heatmap overlays explaining the model's focus during motion:
+```bash
+python -m har.gradcam --video Sample-Test/action.mp4 --weight results/checkpoints/ucf101_paper_x112_b16_l2_d30_300k_best.pth
+```
+
+---
+
+## 📺 Real-Time YouTube Video Inference
+
+Our distributed visual server enables serverless, high-speed testing of live YouTube streaming clips. The backend processes streams on-the-fly by parsing metadata without downloading raw video files.
+
+### Launch local server:
+```bash
+# Navigate to the Web-api directory
+cd Web-api
+
+# Start local server on port 5000
+python app.py
+```
+
+### Stream Live YouTube Videos:
+1. Open your web browser and navigate to `http://localhost:5000/`.
+2. Scroll to the **YouTube Video Streaming** panel on the web interface.
+3. Paste any public YouTube watch link or short URL (e.g. `https://www.youtube.com/watch?v=xxxx`) into the text bar.
+4. Select your active model (e.g. `Paper 3D CNN (Recommended)`) from the dropdown.
+5. Click **Resolve and Stream**.
+6. The backend serverless gateway leverages `yt-dlp` to capture direct, low-latency MP4 stream URLs, performs on-the-fly frame extraction and normalization, runs the model pass, and renders **spatiotemporal Grad-CAM heatmap overlay animations** directly in your browser.
+
+---
+
 ## 📝 How to Register a Permanent Zenodo DOI
 
 To register a permanent scientific DOI for this repository upon paper acceptance:

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="start|center_vertical">
+
+    <!-- Avatar Placeholder -->
+    <TextView
+        android:id="@+id/aiAvatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_chat_bubble_user"
+        android:backgroundTint="#3a206c"
+        android:text="🤖"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/aiSenderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lumat.net AI"
+            android:textColor="#8b82a0"
+            android:textSize="11sp"
+            android:layout_marginBottom="4dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_chat_bubble_ai"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+                android:id="@+id/aiMessageProgress"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                android:indeterminate="true"
+                android:indeterminateTint="#00FF66"
+                android:indeterminateTintMode="src_atop" />
+
+            <TextView
+                android:id="@+id/aiMessageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello! How can I assist you today?"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

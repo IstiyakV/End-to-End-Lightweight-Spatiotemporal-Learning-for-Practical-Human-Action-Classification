@@ -1,0 +1,810 @@
+[
+    {
+        "category": "ApplyEyeMakeup",
+        "original_filename": "v_ApplyEyeMakeup_g01_c01.avi",
+        "sample_filename": "ApplyEyeMakeup.avi",
+        "predicted_class": "ApplyLipstick",
+        "confidence": 0.36782306432724,
+        "match": false
+    },
+    {
+        "category": "ApplyLipstick",
+        "original_filename": "v_ApplyLipstick_g01_c01.avi",
+        "sample_filename": "ApplyLipstick.avi",
+        "predicted_class": "ApplyLipstick",
+        "confidence": 0.25600865483283997,
+        "match": true
+    },
+    {
+        "category": "Archery",
+        "original_filename": "v_Archery_g01_c01.avi",
+        "sample_filename": "Archery.avi",
+        "predicted_class": "Nunchucks",
+        "confidence": 0.29685911536216736,
+        "match": false
+    },
+    {
+        "category": "BabyCrawling",
+        "original_filename": "v_BabyCrawling_g01_c01.avi",
+        "sample_filename": "BabyCrawling.avi",
+        "predicted_class": "BabyCrawling",
+        "confidence": 0.6897631883621216,
+        "match": true
+    },
+    {
+        "category": "BalanceBeam",
+        "original_filename": "v_BalanceBeam_g01_c01.avi",
+        "sample_filename": "BalanceBeam.avi",
+        "predicted_class": "PlayingTabla",
+        "confidence": 0.16889481246471405,
+        "match": false
+    },
+    {
+        "category": "BandMarching",
+        "original_filename": "v_BandMarching_g01_c01.avi",
+        "sample_filename": "BandMarching.avi",
+        "predicted_class": "BandMarching",
+        "confidence": 0.8962839841842651,
+        "match": true
+    },
+    {
+        "category": "BaseballPitch",
+        "original_filename": "v_BaseballPitch_g01_c01.avi",
+        "sample_filename": "BaseballPitch.avi",
+        "predicted_class": "HorseRiding",
+        "confidence": 0.20909608900547028,
+        "match": false
+    },
+    {
+        "category": "Basketball",
+        "original_filename": "v_Basketball_g01_c01.avi",
+        "sample_filename": "Basketball.avi",
+        "predicted_class": "TennisSwing",
+        "confidence": 0.9219897985458374,
+        "match": false
+    },
+    {
+        "category": "BasketballDunk",
+        "original_filename": "v_BasketballDunk_g01_c01.avi",
+        "sample_filename": "BasketballDunk.avi",
+        "predicted_class": "BasketballDunk",
+        "confidence": 0.2960037887096405,
+        "match": true
+    },
+    {
+        "category": "BenchPress",
+        "original_filename": "v_BenchPress_g01_c01.avi",
+        "sample_filename": "BenchPress.avi",
+        "predicted_class": "BenchPress",
+        "confidence": 0.505831241607666,
+        "match": true
+    },
+    {
+        "category": "Biking",
+        "original_filename": "v_Biking_g01_c01.avi",
+        "sample_filename": "Biking.avi",
+        "predicted_class": "Biking",
+        "confidence": 0.38600584864616394,
+        "match": true
+    },
+    {
+        "category": "Billiards",
+        "original_filename": "v_Billiards_g01_c01.avi",
+        "sample_filename": "Billiards.avi",
+        "predicted_class": "Billiards",
+        "confidence": 0.9999983310699463,
+        "match": true
+    },
+    {
+        "category": "BlowDryHair",
+        "original_filename": "v_BlowDryHair_g01_c01.avi",
+        "sample_filename": "BlowDryHair.avi",
+        "predicted_class": "Knitting",
+        "confidence": 0.4553737938404083,
+        "match": false
+    },
+    {
+        "category": "BlowingCandles",
+        "original_filename": "v_BlowingCandles_g01_c01.avi",
+        "sample_filename": "BlowingCandles.avi",
+        "predicted_class": "FrontCrawl",
+        "confidence": 0.38289377093315125,
+        "match": false
+    },
+    {
+        "category": "BodyWeightSquats",
+        "original_filename": "v_BodyWeightSquats_g01_c01.avi",
+        "sample_filename": "BodyWeightSquats.avi",
+        "predicted_class": "BodyWeightSquats",
+        "confidence": 0.5883377194404602,
+        "match": true
+    },
+    {
+        "category": "Bowling",
+        "original_filename": "v_Bowling_g01_c01.avi",
+        "sample_filename": "Bowling.avi",
+        "predicted_class": "Bowling",
+        "confidence": 0.8139438629150391,
+        "match": true
+    },
+    {
+        "category": "BoxingPunchingBag",
+        "original_filename": "v_BoxingPunchingBag_g01_c01.avi",
+        "sample_filename": "BoxingPunchingBag.avi",
+        "predicted_class": "BoxingPunchingBag",
+        "confidence": 0.6626500487327576,
+        "match": true
+    },
+    {
+        "category": "BoxingSpeedBag",
+        "original_filename": "v_BoxingSpeedBag_g01_c01.avi",
+        "sample_filename": "BoxingSpeedBag.avi",
+        "predicted_class": "BabyCrawling",
+        "confidence": 0.1457149088382721,
+        "match": false
+    },
+    {
+        "category": "BreastStroke",
+        "original_filename": "v_BreastStroke_g01_c01.avi",
+        "sample_filename": "BreastStroke.avi",
+        "predicted_class": "BreastStroke",
+        "confidence": 0.9919642210006714,
+        "match": true
+    },
+    {
+        "category": "BrushingTeeth",
+        "original_filename": "v_BrushingTeeth_g01_c01.avi",
+        "sample_filename": "BrushingTeeth.avi",
+        "predicted_class": "Kayaking",
+        "confidence": 0.159917414188385,
+        "match": false
+    },
+    {
+        "category": "CleanAndJerk",
+        "original_filename": "v_CleanAndJerk_g01_c01.avi",
+        "sample_filename": "CleanAndJerk.avi",
+        "predicted_class": "ParallelBars",
+        "confidence": 0.3037087917327881,
+        "match": false
+    },
+    {
+        "category": "CliffDiving",
+        "original_filename": "v_CliffDiving_g01_c01.avi",
+        "sample_filename": "CliffDiving.avi",
+        "predicted_class": "CliffDiving",
+        "confidence": 0.9688737988471985,
+        "match": true
+    },
+    {
+        "category": "CricketBowling",
+        "original_filename": "v_CricketBowling_g01_c01.avi",
+        "sample_filename": "CricketBowling.avi",
+        "predicted_class": "SoccerPenalty",
+        "confidence": 0.4326963424682617,
+        "match": false
+    },
+    {
+        "category": "CricketShot",
+        "original_filename": "v_CricketShot_g01_c01.avi",
+        "sample_filename": "CricketShot.avi",
+        "predicted_class": "SoccerPenalty",
+        "confidence": 0.6155343651771545,
+        "match": false
+    },
+    {
+        "category": "CuttingInKitchen",
+        "original_filename": "v_CuttingInKitchen_g01_c01.avi",
+        "sample_filename": "CuttingInKitchen.avi",
+        "predicted_class": "BabyCrawling",
+        "confidence": 0.7574669122695923,
+        "match": false
+    },
+    {
+        "category": "Diving",
+        "original_filename": "v_Diving_g01_c01.avi",
+        "sample_filename": "Diving.avi",
+        "predicted_class": "Diving",
+        "confidence": 0.9957208037376404,
+        "match": true
+    },
+    {
+        "category": "Drumming",
+        "original_filename": "v_Drumming_g01_c01.avi",
+        "sample_filename": "Drumming.avi",
+        "predicted_class": "Drumming",
+        "confidence": 0.925967812538147,
+        "match": true
+    },
+    {
+        "category": "Fencing",
+        "original_filename": "v_Fencing_g01_c01.avi",
+        "sample_filename": "Fencing.avi",
+        "predicted_class": "Fencing",
+        "confidence": 0.9093062877655029,
+        "match": true
+    },
+    {
+        "category": "FieldHockeyPenalty",
+        "original_filename": "v_FieldHockeyPenalty_g01_c01.avi",
+        "sample_filename": "FieldHockeyPenalty.avi",
+        "predicted_class": "FieldHockeyPenalty",
+        "confidence": 0.6204809546470642,
+        "match": true
+    },
+    {
+        "category": "FloorGymnastics",
+        "original_filename": "v_FloorGymnastics_g01_c01.avi",
+        "sample_filename": "FloorGymnastics.avi",
+        "predicted_class": "FloorGymnastics",
+        "confidence": 0.9781084060668945,
+        "match": true
+    },
+    {
+        "category": "FrisbeeCatch",
+        "original_filename": "v_FrisbeeCatch_g01_c01.avi",
+        "sample_filename": "FrisbeeCatch.avi",
+        "predicted_class": "Rowing",
+        "confidence": 0.18391063809394836,
+        "match": false
+    },
+    {
+        "category": "FrontCrawl",
+        "original_filename": "v_FrontCrawl_g01_c01.avi",
+        "sample_filename": "FrontCrawl.avi",
+        "predicted_class": "FrontCrawl",
+        "confidence": 0.9853948354721069,
+        "match": true
+    },
+    {
+        "category": "GolfSwing",
+        "original_filename": "v_GolfSwing_g01_c01.avi",
+        "sample_filename": "GolfSwing.avi",
+        "predicted_class": "GolfSwing",
+        "confidence": 0.6007147431373596,
+        "match": true
+    },
+    {
+        "category": "Haircut",
+        "original_filename": "v_Haircut_g01_c01.avi",
+        "sample_filename": "Haircut.avi",
+        "predicted_class": "Haircut",
+        "confidence": 0.42615756392478943,
+        "match": true
+    },
+    {
+        "category": "HammerThrow",
+        "original_filename": "v_HammerThrow_g01_c01.avi",
+        "sample_filename": "HammerThrow.avi",
+        "predicted_class": "HammerThrow",
+        "confidence": 0.6285018920898438,
+        "match": true
+    },
+    {
+        "category": "Hammering",
+        "original_filename": "v_Hammering_g01_c01.avi",
+        "sample_filename": "Hammering.avi",
+        "predicted_class": "MoppingFloor",
+        "confidence": 0.2822875380516052,
+        "match": false
+    },
+    {
+        "category": "HandstandPushups",
+        "original_filename": "v_HandStandPushups_g01_c01.avi",
+        "sample_filename": "HandstandPushups.avi",
+        "predicted_class": "RockClimbingIndoor",
+        "confidence": 0.4855068027973175,
+        "match": false
+    },
+    {
+        "category": "HandstandWalking",
+        "original_filename": "v_HandstandWalking_g01_c01.avi",
+        "sample_filename": "HandstandWalking.avi",
+        "predicted_class": "MoppingFloor",
+        "confidence": 0.19400152564048767,
+        "match": false
+    },
+    {
+        "category": "HeadMassage",
+        "original_filename": "v_HeadMassage_g01_c01.avi",
+        "sample_filename": "HeadMassage.avi",
+        "predicted_class": "HeadMassage",
+        "confidence": 0.328005313873291,
+        "match": true
+    },
+    {
+        "category": "HighJump",
+        "original_filename": "v_HighJump_g01_c01.avi",
+        "sample_filename": "HighJump.avi",
+        "predicted_class": "HorseRace",
+        "confidence": 0.2688825726509094,
+        "match": false
+    },
+    {
+        "category": "HorseRace",
+        "original_filename": "v_HorseRace_g01_c01.avi",
+        "sample_filename": "HorseRace.avi",
+        "predicted_class": "HorseRace",
+        "confidence": 0.6225554347038269,
+        "match": true
+    },
+    {
+        "category": "HorseRiding",
+        "original_filename": "v_HorseRiding_g01_c01.avi",
+        "sample_filename": "HorseRiding.avi",
+        "predicted_class": "Rowing",
+        "confidence": 0.49669522047042847,
+        "match": false
+    },
+    {
+        "category": "HulaHoop",
+        "original_filename": "v_HulaHoop_g01_c01.avi",
+        "sample_filename": "HulaHoop.avi",
+        "predicted_class": "Drumming",
+        "confidence": 0.45633041858673096,
+        "match": false
+    },
+    {
+        "category": "IceDancing",
+        "original_filename": "v_IceDancing_g01_c01.avi",
+        "sample_filename": "IceDancing.avi",
+        "predicted_class": "IceDancing",
+        "confidence": 0.9975546002388,
+        "match": true
+    },
+    {
+        "category": "JavelinThrow",
+        "original_filename": "v_JavelinThrow_g01_c01.avi",
+        "sample_filename": "JavelinThrow.avi",
+        "predicted_class": "JavelinThrow",
+        "confidence": 0.8243018388748169,
+        "match": true
+    },
+    {
+        "category": "JugglingBalls",
+        "original_filename": "v_JugglingBalls_g01_c01.avi",
+        "sample_filename": "JugglingBalls.avi",
+        "predicted_class": "SoccerJuggling",
+        "confidence": 0.573645830154419,
+        "match": false
+    },
+    {
+        "category": "JumpRope",
+        "original_filename": "v_JumpRope_g01_c01.avi",
+        "sample_filename": "JumpRope.avi",
+        "predicted_class": "RockClimbingIndoor",
+        "confidence": 0.5451487898826599,
+        "match": false
+    },
+    {
+        "category": "JumpingJack",
+        "original_filename": "v_JumpingJack_g01_c01.avi",
+        "sample_filename": "JumpingJack.avi",
+        "predicted_class": "JumpRope",
+        "confidence": 0.3924179673194885,
+        "match": false
+    },
+    {
+        "category": "Kayaking",
+        "original_filename": "v_Kayaking_g01_c01.avi",
+        "sample_filename": "Kayaking.avi",
+        "predicted_class": "Kayaking",
+        "confidence": 0.9028716683387756,
+        "match": true
+    },
+    {
+        "category": "Knitting",
+        "original_filename": "v_Knitting_g01_c01.avi",
+        "sample_filename": "Knitting.avi",
+        "predicted_class": "Knitting",
+        "confidence": 0.5443102121353149,
+        "match": true
+    },
+    {
+        "category": "LongJump",
+        "original_filename": "v_LongJump_g01_c01.avi",
+        "sample_filename": "LongJump.avi",
+        "predicted_class": "LongJump",
+        "confidence": 0.9982307553291321,
+        "match": true
+    },
+    {
+        "category": "Lunges",
+        "original_filename": "v_Lunges_g01_c01.avi",
+        "sample_filename": "Lunges.avi",
+        "predicted_class": "Swing",
+        "confidence": 0.4427587389945984,
+        "match": false
+    },
+    {
+        "category": "MilitaryParade",
+        "original_filename": "v_MilitaryParade_g01_c01.avi",
+        "sample_filename": "MilitaryParade.avi",
+        "predicted_class": "MilitaryParade",
+        "confidence": 0.8011599779129028,
+        "match": true
+    },
+    {
+        "category": "Mixing",
+        "original_filename": "v_Mixing_g01_c01.avi",
+        "sample_filename": "Mixing.avi",
+        "predicted_class": "BabyCrawling",
+        "confidence": 0.46753889322280884,
+        "match": false
+    },
+    {
+        "category": "MoppingFloor",
+        "original_filename": "v_MoppingFloor_g01_c01.avi",
+        "sample_filename": "MoppingFloor.avi",
+        "predicted_class": "WalkingWithDog",
+        "confidence": 0.7432835698127747,
+        "match": false
+    },
+    {
+        "category": "Nunchucks",
+        "original_filename": "v_Nunchucks_g01_c01.avi",
+        "sample_filename": "Nunchucks.avi",
+        "predicted_class": "Nunchucks",
+        "confidence": 0.6745619177818298,
+        "match": true
+    },
+    {
+        "category": "ParallelBars",
+        "original_filename": "v_ParallelBars_g01_c01.avi",
+        "sample_filename": "ParallelBars.avi",
+        "predicted_class": "ParallelBars",
+        "confidence": 0.8777510523796082,
+        "match": true
+    },
+    {
+        "category": "PizzaTossing",
+        "original_filename": "v_PizzaTossing_g01_c01.avi",
+        "sample_filename": "PizzaTossing.avi",
+        "predicted_class": "Punch",
+        "confidence": 0.7544711828231812,
+        "match": false
+    },
+    {
+        "category": "PlayingCello",
+        "original_filename": "v_PlayingCello_g01_c01.avi",
+        "sample_filename": "PlayingCello.avi",
+        "predicted_class": "Drumming",
+        "confidence": 0.3746109902858734,
+        "match": false
+    },
+    {
+        "category": "PlayingDaf",
+        "original_filename": "v_PlayingDaf_g01_c01.avi",
+        "sample_filename": "PlayingDaf.avi",
+        "predicted_class": "PlayingDaf",
+        "confidence": 0.23579511046409607,
+        "match": true
+    },
+    {
+        "category": "PlayingDhol",
+        "original_filename": "v_PlayingDhol_g01_c01.avi",
+        "sample_filename": "PlayingDhol.avi",
+        "predicted_class": "PlayingDhol",
+        "confidence": 0.8329910635948181,
+        "match": true
+    },
+    {
+        "category": "PlayingFlute",
+        "original_filename": "v_PlayingFlute_g01_c01.avi",
+        "sample_filename": "PlayingFlute.avi",
+        "predicted_class": "PlayingFlute",
+        "confidence": 0.3759482204914093,
+        "match": true
+    },
+    {
+        "category": "PlayingGuitar",
+        "original_filename": "v_PlayingGuitar_g01_c01.avi",
+        "sample_filename": "PlayingGuitar.avi",
+        "predicted_class": "PlayingGuitar",
+        "confidence": 0.9438024759292603,
+        "match": true
+    },
+    {
+        "category": "PlayingPiano",
+        "original_filename": "v_PlayingPiano_g01_c01.avi",
+        "sample_filename": "PlayingPiano.avi",
+        "predicted_class": "BoxingSpeedBag",
+        "confidence": 0.23804882168769836,
+        "match": false
+    },
+    {
+        "category": "PlayingSitar",
+        "original_filename": "v_PlayingSitar_g01_c01.avi",
+        "sample_filename": "PlayingSitar.avi",
+        "predicted_class": "PlayingTabla",
+        "confidence": 0.3247949779033661,
+        "match": false
+    },
+    {
+        "category": "PlayingTabla",
+        "original_filename": "v_PlayingTabla_g01_c01.avi",
+        "sample_filename": "PlayingTabla.avi",
+        "predicted_class": "PlayingTabla",
+        "confidence": 0.9108166694641113,
+        "match": true
+    },
+    {
+        "category": "PlayingViolin",
+        "original_filename": "v_PlayingViolin_g01_c01.avi",
+        "sample_filename": "PlayingViolin.avi",
+        "predicted_class": "PlayingViolin",
+        "confidence": 0.2692146301269531,
+        "match": true
+    },
+    {
+        "category": "PoleVault",
+        "original_filename": "v_PoleVault_g01_c01.avi",
+        "sample_filename": "PoleVault.avi",
+        "predicted_class": "PoleVault",
+        "confidence": 0.7922064661979675,
+        "match": true
+    },
+    {
+        "category": "PommelHorse",
+        "original_filename": "v_PommelHorse_g01_c01.avi",
+        "sample_filename": "PommelHorse.avi",
+        "predicted_class": "PommelHorse",
+        "confidence": 0.8521705865859985,
+        "match": true
+    },
+    {
+        "category": "PullUps",
+        "original_filename": "v_PullUps_g01_c01.avi",
+        "sample_filename": "PullUps.avi",
+        "predicted_class": "BoxingSpeedBag",
+        "confidence": 0.21165770292282104,
+        "match": false
+    },
+    {
+        "category": "Punch",
+        "original_filename": "v_Punch_g01_c01.avi",
+        "sample_filename": "Punch.avi",
+        "predicted_class": "Punch",
+        "confidence": 0.9957142472267151,
+        "match": true
+    },
+    {
+        "category": "PushUps",
+        "original_filename": "v_PushUps_g01_c01.avi",
+        "sample_filename": "PushUps.avi",
+        "predicted_class": "PlayingTabla",
+        "confidence": 0.27621087431907654,
+        "match": false
+    },
+    {
+        "category": "Rafting",
+        "original_filename": "v_Rafting_g01_c01.avi",
+        "sample_filename": "Rafting.avi",
+        "predicted_class": "Rafting",
+        "confidence": 0.9046027064323425,
+        "match": true
+    },
+    {
+        "category": "RockClimbingIndoor",
+        "original_filename": "v_RockClimbingIndoor_g01_c01.avi",
+        "sample_filename": "RockClimbingIndoor.avi",
+        "predicted_class": "StillRings",
+        "confidence": 0.13192494213581085,
+        "match": false
+    },
+    {
+        "category": "RopeClimbing",
+        "original_filename": "v_RopeClimbing_g01_c01.avi",
+        "sample_filename": "RopeClimbing.avi",
+        "predicted_class": "RopeClimbing",
+        "confidence": 0.5946968197822571,
+        "match": true
+    },
+    {
+        "category": "Rowing",
+        "original_filename": "v_Rowing_g01_c01.avi",
+        "sample_filename": "Rowing.avi",
+        "predicted_class": "Rowing",
+        "confidence": 0.6832875609397888,
+        "match": true
+    },
+    {
+        "category": "SalsaSpin",
+        "original_filename": "v_SalsaSpin_g01_c01.avi",
+        "sample_filename": "SalsaSpin.avi",
+        "predicted_class": "SalsaSpin",
+        "confidence": 0.24620479345321655,
+        "match": true
+    },
+    {
+        "category": "ShavingBeard",
+        "original_filename": "v_ShavingBeard_g01_c01.avi",
+        "sample_filename": "ShavingBeard.avi",
+        "predicted_class": "Nunchucks",
+        "confidence": 0.11435578763484955,
+        "match": false
+    },
+    {
+        "category": "Shotput",
+        "original_filename": "v_Shotput_g01_c01.avi",
+        "sample_filename": "Shotput.avi",
+        "predicted_class": "Shotput",
+        "confidence": 0.4511830508708954,
+        "match": true
+    },
+    {
+        "category": "SkateBoarding",
+        "original_filename": "v_SkateBoarding_g01_c01.avi",
+        "sample_filename": "SkateBoarding.avi",
+        "predicted_class": "BoxingPunchingBag",
+        "confidence": 0.35978055000305176,
+        "match": false
+    },
+    {
+        "category": "Skiing",
+        "original_filename": "v_Skiing_g01_c01.avi",
+        "sample_filename": "Skiing.avi",
+        "predicted_class": "Skiing",
+        "confidence": 0.9197477102279663,
+        "match": true
+    },
+    {
+        "category": "Skijet",
+        "original_filename": "v_Skijet_g01_c01.avi",
+        "sample_filename": "Skijet.avi",
+        "predicted_class": "Skijet",
+        "confidence": 0.5064159035682678,
+        "match": true
+    },
+    {
+        "category": "SkyDiving",
+        "original_filename": "v_SkyDiving_g01_c01.avi",
+        "sample_filename": "SkyDiving.avi",
+        "predicted_class": "JavelinThrow",
+        "confidence": 0.22168414294719696,
+        "match": false
+    },
+    {
+        "category": "SoccerJuggling",
+        "original_filename": "v_SoccerJuggling_g01_c01.avi",
+        "sample_filename": "SoccerJuggling.avi",
+        "predicted_class": "PizzaTossing",
+        "confidence": 0.685020387172699,
+        "match": false
+    },
+    {
+        "category": "SoccerPenalty",
+        "original_filename": "v_SoccerPenalty_g01_c01.avi",
+        "sample_filename": "SoccerPenalty.avi",
+        "predicted_class": "SoccerPenalty",
+        "confidence": 0.9981229901313782,
+        "match": true
+    },
+    {
+        "category": "StillRings",
+        "original_filename": "v_StillRings_g01_c01.avi",
+        "sample_filename": "StillRings.avi",
+        "predicted_class": "FloorGymnastics",
+        "confidence": 0.584882378578186,
+        "match": false
+    },
+    {
+        "category": "SumoWrestling",
+        "original_filename": "v_SumoWrestling_g01_c01.avi",
+        "sample_filename": "SumoWrestling.avi",
+        "predicted_class": "Rafting",
+        "confidence": 0.5310498476028442,
+        "match": false
+    },
+    {
+        "category": "Surfing",
+        "original_filename": "v_Surfing_g01_c01.avi",
+        "sample_filename": "Surfing.avi",
+        "predicted_class": "Surfing",
+        "confidence": 0.9839999079704285,
+        "match": true
+    },
+    {
+        "category": "Swing",
+        "original_filename": "v_Swing_g01_c01.avi",
+        "sample_filename": "Swing.avi",
+        "predicted_class": "Swing",
+        "confidence": 0.981231153011322,
+        "match": true
+    },
+    {
+        "category": "TableTennisShot",
+        "original_filename": "v_TableTennisShot_g01_c01.avi",
+        "sample_filename": "TableTennisShot.avi",
+        "predicted_class": "TableTennisShot",
+        "confidence": 0.7218875885009766,
+        "match": true
+    },
+    {
+        "category": "TaiChi",
+        "original_filename": "v_TaiChi_g01_c01.avi",
+        "sample_filename": "TaiChi.avi",
+        "predicted_class": "TaiChi",
+        "confidence": 0.7666203379631042,
+        "match": true
+    },
+    {
+        "category": "TennisSwing",
+        "original_filename": "v_TennisSwing_g01_c01.avi",
+        "sample_filename": "TennisSwing.avi",
+        "predicted_class": "TennisSwing",
+        "confidence": 0.9158337712287903,
+        "match": true
+    },
+    {
+        "category": "ThrowDiscus",
+        "original_filename": "v_ThrowDiscus_g01_c01.avi",
+        "sample_filename": "ThrowDiscus.avi",
+        "predicted_class": "VolleyballSpiking",
+        "confidence": 0.5049514770507812,
+        "match": false
+    },
+    {
+        "category": "TrampolineJumping",
+        "original_filename": "v_TrampolineJumping_g01_c01.avi",
+        "sample_filename": "TrampolineJumping.avi",
+        "predicted_class": "TrampolineJumping",
+        "confidence": 0.5031111240386963,
+        "match": true
+    },
+    {
+        "category": "Typing",
+        "original_filename": "v_Typing_g01_c01.avi",
+        "sample_filename": "Typing.avi",
+        "predicted_class": "Drumming",
+        "confidence": 0.6155509352684021,
+        "match": false
+    },
+    {
+        "category": "UnevenBars",
+        "original_filename": "v_UnevenBars_g01_c01.avi",
+        "sample_filename": "UnevenBars.avi",
+        "predicted_class": "ParallelBars",
+        "confidence": 0.3081955313682556,
+        "match": false
+    },
+    {
+        "category": "VolleyballSpiking",
+        "original_filename": "v_VolleyballSpiking_g01_c01.avi",
+        "sample_filename": "VolleyballSpiking.avi",
+        "predicted_class": "ParallelBars",
+        "confidence": 0.7293485999107361,
+        "match": false
+    },
+    {
+        "category": "WalkingWithDog",
+        "original_filename": "v_WalkingWithDog_g01_c01.avi",
+        "sample_filename": "WalkingWithDog.avi",
+        "predicted_class": "BoxingSpeedBag",
+        "confidence": 0.3568992018699646,
+        "match": false
+    },
+    {
+        "category": "WallPushups",
+        "original_filename": "v_WallPushups_g01_c01.avi",
+        "sample_filename": "WallPushups.avi",
+        "predicted_class": "ShavingBeard",
+        "confidence": 0.39275702834129333,
+        "match": false
+    },
+    {
+        "category": "WritingOnBoard",
+        "original_filename": "v_WritingOnBoard_g01_c01.avi",
+        "sample_filename": "WritingOnBoard.avi",
+        "predicted_class": "WritingOnBoard",
+        "confidence": 0.5745057463645935,
+        "match": true
+    },
+    {
+        "category": "YoYo",
+        "original_filename": "v_YoYo_g01_c01.avi",
+        "sample_filename": "YoYo.avi",
+        "predicted_class": "YoYo",
+        "confidence": 0.895709216594696,
+        "match": true
+    }
+]

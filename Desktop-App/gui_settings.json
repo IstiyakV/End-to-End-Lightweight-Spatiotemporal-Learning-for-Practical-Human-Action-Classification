@@ -1,0 +1,8 @@
+{
+    "ucf101_ds_path": "I:/My Drive/Kinetics700/videos/train",
+    "kinetics_ds_path": "I:/My Drive/Kinetics700/videos/train",
+    "appearance_mode": "dark",
+    "kinetics_dl_root": "I:/My Drive/Kinetics700/videos/train",
+    "ucf101_cache_path": "I:/My Drive/Kinetics700/videos/train",
+    "backbone_weights": "C:/Users/kazim/Downloads/r3d_18_kinetics.pth"
+}

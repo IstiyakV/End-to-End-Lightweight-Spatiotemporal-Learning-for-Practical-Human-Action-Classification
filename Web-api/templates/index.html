@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Lovely Unified Mindful Artificial Thought (LUMAT) - Human Action Recognition Dashboard">
+    <meta name="author" content="Frenify & Antigravity">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>LUMAT - Human Action Recognition</title>
+    <link rel="icon" type="image/png" href="/static/img/favicon.ico">
+
+    <script>
+        if (!localStorage.frenify_skin) {
+            localStorage.frenify_skin = 'dark';
+        }
+        if (!localStorage.frenify_panel) {
+            localStorage.frenify_panel = '';
+        }
+        document.documentElement.setAttribute("data-techwave-skin", localStorage.frenify_skin);
+        if (localStorage.frenify_panel !== '') {
+            document.documentElement.classList.add(localStorage.frenify_panel);
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&amp;family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="/static/css/plugins8a54.css?ver=1.0.0" />
+    <link type="text/css" rel="stylesheet" href="/static/css/style8a54.css?ver=1.0.0" />
+    <link type="text/css" rel="stylesheet" href="/static/css/custom.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/custom_premium.css?v=1.1.2" />
+</head>
+
+<body>
+
+<!-- Moving Submenu -->
+<div class="techwave_fn_fixedsub">
+    <ul></ul>
+</div>
+<!-- !Moving Submenu -->
+
+<!-- Preloader -->
+<div class="techwave_fn_preloader">
+    <svg>
+        <circle class="first_circle" cx="50%" cy="50%" r="110"></circle>
+        <circle class="second_circle" cx="50%" cy="50%" r="110"></circle>
+    </svg>
+</div>
+<!-- !Preloader -->
+
+<!-- MAIN WRAPPER -->
+<div class="techwave_fn_wrapper">
+    <div class="techwave_fn_wrap">
+
+        <!-- Searchbar -->
+        <div class="techwave_fn_searchbar">
+            <div class="search__bar">
+                <input class="search__input" type="text" placeholder="Search here...">
+                <img src="/static/svg/search.svg" alt="" class="fn__svg search__icon">
+                <a class="search__closer" href="#"><img src="/static/svg/close.svg" alt="" class="fn__svg"></a>
+            </div>
+            <div class="search__results">
+                <div class="results__title">Results</div>
+                <div class="results__list">
+                    <ul>
+                        <li><a href="#" class="search-item" data-tab="har-tab">Human Action Recognition Dashboard</a></li>
+                        <li><a href="#" class="search-item" data-tab="home-tab">LUMAT Main Hub</a></li>
+                        <li><a href="#" class="coming-soon-trigger">Finetuned 3D CNN Architectures</a></li>
+                        <li><a href="#" class="coming-soon-trigger">UCF101 Dataset Details</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- !Searchbar -->
+
+        <!-- HEADER -->
+        <header class="techwave_fn_header">
+            <!-- Header left: model info summary -->
+            <div class="header__left">
+                <div class="fn__token_info">
+                    <span class="token_summary">
+                        <span class="count">101</span>
+                        <span class="text">Action<br>Classes</span>
+                    </span>
+                    <a href="#" class="token_upgrade techwave_fn_button"><span>Model Active</span></a>
+                    <div class="token__popup">
+                        Classifier: <span>Plain 3D CNN</span><br>
+                        Weights: <span>ucf101_3dcnn_best.pth</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header right: quick settings -->
+            <div class="header__right">
+                <div class="fn__nav_bar">
+                    <!-- Search opener -->
+                    <div class="bar__item bar__item_search">
+                        <a href="#" class="item_opener">
+                            <img src="/static/svg/search.svg" alt="" class="fn__svg">
+                        </a>
+                        <div class="item_popup">
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="bar__item bar__item_notification has_notification">
+                        <a href="#" class="item_opener">
+                            <img src="/static/svg/bell.svg" alt="" class="fn__svg">
+                        </a>
+                        <div class="item_popup">
+                            <div class="ntfc_header">
+                                <h2 class="ntfc_title">System Alerts</h2>
+                                <a href="#" class="clear-notifications">Clear</a>
+                            </div>
+                            <div class="ntfc_list">
+                                <ul>
+                                    <li>
+                                        <p><a href="#" class="fn__tab_trigger" data-target="har-tab">WebAPI Action Classification module is fully operational</a></p>
+                                        <span>Just Now</span>
+                                    </li>
+                                    <li>
+                                        <p><a href="#">PyTorch CUDA execution backend detected</a></p>
+                                        <span>10 Mins Ago</span>
+                                    </li>
+                                    <li>
+                                        <p><a href="#">Spatiotemporal Grad-CAM heatmap overlays compiled</a></p>
+                                        <span>2 Hours Ago</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Full Screen -->
+                    <div class="bar__item bar__item_fullscreen">
+                        <a href="#" class="item_opener">
+                            <img src="/static/svg/fullscreen.svg" alt="" class="fn__svg f_screen">
+                            <img src="/static/svg/smallscreen.svg" alt="" class="fn__svg s_screen">
+                        </a>
+                    </div>
+
+                    <!-- Language Selector -->
+                    <div class="bar__item bar__item_language">
+                        <a href="#" class="item_opener">
+                            <img src="/static/svg/language.svg" alt="" class="fn__svg">
+                        </a>
+                        <div class="item_popup">
+                            <ul>
+                                <li><span class="active">English</span></li>
+                                <li><a href="#" class="coming-soon-trigger">Spanish</a></li>
+                                <li><a href="#" class="coming-soon-trigger">French</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Site Skin (Light/Dark Toggle) -->
+                    <div class="bar__item bar__item_skin">
+                        <a href="#" class="item_opener">
+                            <img src="/static/svg/sun.svg" alt="" class="fn__svg light_mode">
+                            <img src="/static/svg/moon.svg" alt="" class="fn__svg dark_mode">
+                        </a>
+                        <div class="item_popup"></div>
+                    </div>
+
+                    <!-- User Information -->
+                    <div class="bar__item bar__item_user">
+                        <a href="#" class="user_opener">
+                            <img src="/static/img/user/user.jpg" alt="" onerror="this.src='/static/svg/person.svg'">
+                        </a>
+                        <div class="item_popup">
+                            <div class="user_profile">
+                                <div class="user_img">
+                                    <img src="/static/img/user/user.jpg" alt="" onerror="this.src='/static/svg/person.svg'">
+                                </div>
+                                <div class="user_info">
+                                    <h2 class="user_name">Kazi Hossain<span>USW Final Year</span></h2>
+                                    <p><a href="mailto:30071074@students.southwales.ac.uk" class="user_email">30071074@students.southwales.ac.uk</a></p>
+                                </div>
+                            </div>
+                            <div class="user_nav">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="coming-soon-trigger">
+                                            <span class="icon"><img src="/static/svg/person.svg" alt="" class="fn__svg"></span>
+                                            <span class="text">Student Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="coming-soon-trigger">
+                                            <span class="icon"><img src="/static/svg/setting.svg" alt="" class="fn__svg"></span>
+                                            <span class="text">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="logout-trigger">
+                                            <span class="icon"><img src="/static/svg/logout.svg" alt="" class="fn__svg"></span>
+                                            <span class="text">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- !HEADER -->
+
+        <!-- LEFT PANEL -->
+        <div class="techwave_fn_leftpanel">
+            <div class="mobile_extra_closer"></div>
+
+            <!-- Left Panel Logo -->
+            <div class="leftpanel_logo">
+                <a href="#" class="fn_logo fn__tab_trigger" data-target="home-tab">
+                    <span class="full_logo">
+                        <img src="/static/img/logo-desktop-full.png" alt="" class="desktop_logo">
+                        <img src="/static/img/logo-retina-full.png" alt="" class="retina_logo">
+                    </span>
+                    <span class="short_logo">
+                        <img src="/static/img/logo-desktop-mini.png" alt="" class="desktop_logo">
+                        <img src="/static/img/logo-retina-mini.png" alt="" class="retina_logo">
+                    </span>
+                </a>
+                <a href="#" class="fn__closer fn__icon_button desktop_closer">
+                    <img src="/static/svg/arrow.svg" alt="" class="fn__svg">
+                </a>
+                <a href="#" class="fn__closer fn__icon_button mobile_closer">
+                    <img src="/static/svg/arrow.svg" alt="" class="fn__svg">
+                </a>
+            </div>
+
+            <!-- Navigation Panel Content -->
+            <div class="leftpanel_content">
+                <!-- Start Here -->
+                <div class="nav_group">
+                    <h2 class="group__title">Start Here</h2>
+                    <ul class="group__list">
+                        <li class="menu-item-home active">
+                            <a href="#" class="fn__tooltip menu__item fn__tab_trigger" data-target="home-tab" data-position="right" title="Home">
+                                <span class="icon"><img src="/static/svg/home.svg" alt="" class="fn__svg"></span>
+                                <span class="text">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fn__tooltip menu__item coming-soon-trigger" data-position="right" title="AI Community">
+                                <span class="icon"><img src="/static/svg/community.svg" alt="" class="fn__svg"></span>
+                                <span class="text">AI Community</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fn__tooltip menu__item coming-soon-trigger" data-position="right" title="AI Research">
+                                <span class="icon"><img src="/static/svg/person.svg" alt="" class="fn__svg"></span>
+                                <span class="text">AI Research<span class="count">4</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fn__tooltip menu__item coming-soon-trigger" data-position="right" title="Projects & Datasets">
+                                <span class="icon"><img src="/static/svg/cube.svg" alt="" class="fn__svg"></span>
+                                <span class="text">Projects & Datasets</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- User Tools -->
+                <div class="nav_group">
+                    <h2 class="group__title">User Tools</h2>
+                    <ul class="group__list">
+                        <li class="menu-item-har">
+                            <a href="#" class="fn__tooltip menu__item fn__tab_trigger" data-target="har-tab" data-position="right" title="Human Action Recognition">
+                                <span class="icon"><img src="/static/svg/image.svg" alt="" class="fn__svg"></span>
+                                <span class="text">Human Action Recognition</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fn__tooltip menu__item coming-soon-trigger" data-position="right" title="Generative AI">
+                                <span class="icon"><img src="/static/svg/chat.svg" alt="" class="fn__svg"></span>
+                                <span class="text">Generative AI</span> <small class="upcoming_badge">(Upcoming...)</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="nav_group">
+                    <h2 class="group__title">Support</h2>
+                    <ul class="group__list">
+                        <li class="menu-item-has-children">
+                            <a href="#" class="fn__tooltip menu__item" title="FAQ &amp; Help" data-position="right">
+                                <span class="icon"><img src="/static/svg/question.svg" alt="" class="fn__svg"></span>
+                                <span class="text">FAQ &amp; Help</span>
+                                <span class="trigger"><img src="/static/svg/arrow.svg" alt="" class="fn__svg"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#" class="coming-soon-trigger"><span class="text">Documentation</span></a></li>
+                                <li><a href="#" class="coming-soon-trigger"><span class="text">FAQ</span></a></li>
+                                <li><a href="#" class="coming-soon-trigger"><span class="text">Changelog <span class="fn__sup">(v1.0.1)</span></span></a></li>
+                                <li><a href="#" class="coming-soon-trigger"><span class="text">Contact USW</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="fn__tooltip menu__item logout-trigger" data-position="right" title="Log Out">
+                                <span class="icon"><img src="/static/svg/logout.svg" alt="" class="fn__svg"></span>
+                                <span class="text">Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- !LEFT PANEL -->
+
+        <!-- CONTENT -->
+        <div class="techwave_fn_content">
+
+            <!-- PAGE wrapper -->
+            <div class="techwave_fn_page">
+
+                <!-- 1. Home Page Section -->
+                <div id="home-tab" class="techwave_fn_home tab-content active-tab">
+                    <div class="section_home">
+                        <div class="section_left">
+                            <div class="techwave_fn_title_holder">
+                                <h1 class="title">Lovely Unified Mindful Artificial Thought</h1>
+                                <p class="desc">Generate new Thoughts with Computer Vision and Generative AI</p>
+                            </div>
+
+                            <div class="techwave_fn_interactive_list modern">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <a href="#" class="fn__tab_trigger" data-target="har-tab">
+                                                <span class="icon">
+                                                    <img src="/static/svg/image.svg" alt="" class="fn__svg">
+                                                </span>
+                                                <h2 class="title">Human Action Recognition</h2>
+                                                <p class="desc">Automatically identify, classify, and spatio-temporally map action sequences in video streams utilizing our deep-learned 3D CNN model. Track neural activation patterns overlayed via Grad-CAM overlays.</p>
+                                                <span class="arrow"><img src="/static/svg/arrow.svg" alt="" class="fn__svg"></span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="#" class="coming-soon-trigger">
+                                                <span class="icon">
+                                                    <img src="/static/svg/chat.svg" alt="" class="fn__svg">
+                                                </span>
+                                                <h2 class="title">Generative AI <small class="upcoming_badge">(Upcoming...)</small></h2>
+                                                <p class="desc">Simulate deep human dialogue, extract semantic insights, and perform multimodal question answering using conversational large language models specialized on computer vision research domains.</p>
+                                                <span class="arrow"><img src="/static/svg/arrow.svg" alt="" class="fn__svg"></span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="section_right">
+                            <div class="company_info">
+                                <img src="/static/img/logo-desktop-full.png" alt="" class="premium_desktop_logo">
+                                <p class="fn__animated_text">Lovely Unified Mindful Artificial Thought<br>Dedicated to "Habiba Lumat" - My Guiding Light, My Eternal Love.</p>
+                                <hr>
+                                <div class="fn__members">
+                                    <div class="active item">
+                                        <span class="circle"></span>
+                                        <span class="text">13,320 Videos / 101 Classes</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="circle"></span>
+                                        <span class="text">279,683 Neural Parameters</span>
+                                    </div>
+                                    <div class="item premium_play_store_btn">
+                                        <a href="/static/files/apps/android/LUMAT.apk" download>
+                                            <img id="downloadAPK" height="120" width="120" src="/static/img/related/new-get-it-on-google-play-png-logo-20.png" alt="Get it on Google Play" onerror="this.src='/static/img/favicon.ico'">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Human Action Recognition Dashboard Section -->
+                <div id="har-tab" class="techwave_fn_user_settings_page tab-content" style="display: none;">
+                    <div class="techwave_fn_pagetitle">
+                        <h2 class="title">Human Action Recognition Dashboard</h2>
+                    </div>
+
+                    <div class="container medium">
+                        <div class="techwave_fn_user_settings">
+                            <!-- Input selection dashboard panel -->
+                            <div id="select_container" class="user__settings">
+                                <div class="settings_left">
+                                    <div class="premium_dropzone_container">
+                                        <div class="fn__upload" id="videoDropzone">
+                                            <span class="upload_content" id="dropzoneContent">
+                                                <img src="/static/svg/upload.svg" alt="" class="fn__svg animate_pulse">
+                                                <span class="title">Drag &amp; Drop a Test Video</span>
+                                                <span class="fn__lined_text">
+                                                    <span class="line"></span>
+                                                    <span class="text">Or</span>
+                                                    <span class="line"></span>
+                                                </span>
+                                                <span class="title">Browse Local Files</span>
+                                                <span class="desc">Supports standard MP4 or AVI formats</span>
+                                            </span>
+                                            <span class="upload_preview" id="dropzonePreview">
+                                                <a href="#" class="fn__closer_custom fn__icon_button" id="clearVideoFile">
+                                                    <img src="/static/svg/close.svg" alt="" class="fn__svg">
+                                                </a>
+                                                <div class="canvas_wrapper">
+                                                    <canvas id="videoThumbnailCanvas" class="preview_canvas"></canvas>
+                                                </div>
+                                                <span id="selectedFileName" class="selected_file_name"></span>
+                                            </span>
+                                        </div>
+                                        <input type="file" id="videoFile" accept=".avi,.mp4" style="display: none;">
+
+                                        <div class="predict_button_wrapper" style="text-align: center;">
+                                            <button id="predictButton" class="token_upgrade techwave_fn_button premium_predict_btn" style="display: none;">
+                                                <span>Recognize Action</span>
+                                            </button>
+                                        </div>
+
+                                        <div id="progressBar" class="premium_progress_container" style="display: none;">
+                                            <div class="progress_label_row">
+                                                <span class="label">Uploading Video File...</span>
+                                                <span class="percentage" id="progressPercent">0%</span>
+                                            </div>
+                                            <div class="progress_bar_bg">
+                                                <div id="progress" class="progress_bar_fill" style="width: 0%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="settings_right">
+                                    <div class="img_sizes premium_control_card">
+                                        <!-- Section 0: Execution Engine Selection -->
+                                        <div class="control_section inference_mode_section">
+                                            <div class="section_header">
+                                                <span class="premium_badge mode_badge">
+                                                    <span class="pulse_dot_green"></span>
+                                                    Execution Engine
+                                                </span>
+                                                <h4 class="title">Select Execution Mode</h4>
+                                            </div>
+                                            <p class="desc_sub">Choose where to run inference: in the cloud backend (includes Grad-CAM attention heatmaps) or entirely locally inside your browser (zero server costs, WebGL accelerated).</p>
+                                            <div class="img_size_select modern_select_wrapper">
+                                                <select id="inferenceEngineSelect">
+                                                    <option value="server" selected>Cloud Server Backend (with Grad-CAM)</option>
+                                                    <option value="client">Local In-Browser GPU (ONNX Web)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="premium_section_divider"></div>
+
+                                        <!-- Section 1: Model Selection -->
+                                        <div class="control_section model_selection_section" id="modelSelectionContainer">
+                                            <div class="section_header">
+                                                <span class="premium_badge model_badge">
+                                                    <span class="pulse_dot"></span>
+                                                    Active Network
+                                                </span>
+                                                <h4 class="title">Select 3D CNN Model</h4>
+                                            </div>
+                                            <p class="desc_sub">Toggle between different pretrained checkpoints. Inference executes entirely on CPU for shared hosting compatibility.</p>
+                                            <div class="img_size_select modern_select_wrapper">
+                                                <select id="neuralModelSelect">
+                                                    <!-- Dynamically populated via API -->
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="premium_section_divider"></div>
+
+                                        <!-- Section 2: Sample Clips -->
+                                        <div class="control_section sample_clips_section">
+                                            <div class="section_header">
+                                                <span class="premium_badge sample_badge">Resources</span>
+                                                <h4 class="title">Sample Benchmark Clips</h4>
+                                            </div>
+                                            <p class="desc_sub">No test clip handy? Download a sample action block extracted from the UCF-101 validation subset to run instantly.</p>
+                                            <div class="img_size_select modern_select_wrapper">
+                                                <select id="sample_video_selection">
+                                                    <option value="/static/videos/samples/human_action_recognition/sample_video.mp4" selected>Sample Video 1 (Punching/Boxing)</option>
+                                                    <option value="/static/videos/samples/human_action_recognition/sample_video_2.mp4">Sample Video 2 (Biking/Cycling)</option>
+                                                    <option value="/static/videos/samples/human_action_recognition/sample_video_3.mp4">Sample Video 3 (Walking/Locomotion)</option>
+                                                </select>
+                                            </div>
+                                            <div class="button_wrapper">
+                                                <button id="downloadSample" class="token_upgrade techwave_fn_button style_download_btn premium_btn_glow">
+                                                    <span>Download Sample</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="settings_f1">
+                                    <!-- Section 3: Dynamic Top 10 F1-Scores Card -->
+                                    <div class="img_sizes premium_control_card f1_scores_card">
+                                        <div class="control_section f1_scores_section">
+                                            <div class="section_header">
+                                                <span class="premium_badge f1_badge">
+                                                    <span class="pulse_dot_green"></span>
+                                                    Performance Metrics
+                                                </span>
+                                                <h4 class="title">Top 10 Action F1-Scores</h4>
+                                            </div>
+                                            <p class="desc_sub">Top 10 performing classes by F1-score for the selected model. Displays class accuracy metrics compiled during validation.</p>
+                                            
+                                            <!-- Dynamic F1 scores progress items list -->
+                                            <div id="f1ScoresContainer" class="premium_f1_list">
+                                                <!-- Injected dynamically via AJAX -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Prediction and Grad-CAM GIF results panel -->
+                            <div id="result_container" class="container medium" style="display: none;">
+                                <div class="techwave_fn_user_profile">
+                                    <div class="user__profile result_flex_layout">
+                                        <div class="user_avatar result_heatmap_display">
+                                            <div class="overlay_loading_wrapper" id="spinnerWrapper">
+                                                <img id="loadingSpinner" src="/static/img/loading-36.gif" alt="Executing model feed-forward loop..." class="processing_large_gif">
+                                            </div>
+                                            <img id="gifImage" src="" alt="Grad-CAM activation overlay" style="display: none;" class="gradcam_result_gif">
+                                        </div>
+
+                                        <div class="user_details result_class_details">
+                                            <h4 class="subtitle">AI Classifier Analysis</h4>
+                                            <div class="processing_model_indicator" id="processingText">
+                                                <img src="/static/img/loading_small.gif" alt="Thinking...">
+                                                <span class="animated_dots">Performing neural classification &amp; spatiotemporal grad-cam activation maps...</span>
+                                            </div>
+
+                                            <div id="inferenceSuccessDisplay" style="display: none;">
+                                                <h3 id="result" class="title class_glow_name"></h3>
+                                                <div class="confidence_display_row">
+                                                    <span class="metric_name">Inference Confidence:</span>
+                                                    <div class="premium_confidence_bar_bg">
+                                                        <div id="confidenceBarFill" class="premium_confidence_bar_fill" style="width: 0%;"></div>
+                                                    </div>
+                                                    <span class="metric_value" id="confidenceValueText">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a href="#" class="user_edit fn__icon_button restart_dashboard_btn" title="Restart inference">
+                                            <img src="/static/svg/setting.svg" alt="Try Again" class="fn__svg">
+                                        </a>
+                                    </div>
+
+                                    <div class="user__plan restart_banner_row">
+                                        <div class="plan_left">
+                                            <h4 class="subtitle">Explore another sequence?</h4>
+                                            <p class="info">The model extracts local 3D convolution features from spatiotemporal dimensions across 16 sequential video frames to classify 101 high-level action classes.</p>
+                                        </div>
+                                        <div class="plan_right">
+                                            <a href="#" class="token_upgrade techwave_fn_button restart_dashboard_btn"><span>Analyze New Clip</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- !PAGE wrapper -->
+
+            <!-- FOOTER -->
+            <footer class="techwave_fn_footer">
+                <div class="techwave_fn_footer_content">
+                    <div class="copyright">
+                        <p>All rights reserved @ 2026 (Kazi Md Istiyak Hossain)</p>
+                    </div>
+                    <div class="menu_items">
+                        <ul>
+                            <li><a href="#" class="coming-soon-trigger">Terms of Service</a></li>
+                            <li><a href="#" class="coming-soon-trigger">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <!-- !FOOTER -->
+
+        </div>
+        <!-- !CONTENT -->
+
+    </div>
+</div>
+<!-- !MAIN WRAPPER -->
+
+<!-- Premium Notification Toast Container -->
+<div class="premium_toast_wrapper" id="toastWrapper"></div>
+
+<!-- Scripts -->
+<script type="text/javascript" src="/static/js/jquery8a54.js?ver=1.0.0"></script>
+<script type="text/javascript" src="/static/js/plugins8a54.js?ver=1.0.0"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="/static/js/ie8.js"></script> <![endif]-->
+<script type="text/javascript" src="/static/js/init8a54.js?ver=1.0.0"></script>
+<script type="text/javascript" src="/static/js/app.js?v=1.1.4"></script>
+<!-- !Scripts -->
+
+</body>
+</html>

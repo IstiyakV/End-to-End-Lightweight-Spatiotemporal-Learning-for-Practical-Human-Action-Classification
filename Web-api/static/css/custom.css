@@ -1,0 +1,26 @@
+
+    /* Add your custom CSS styles here */
+#progressBar {
+    width: 20%;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+#progress {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+}
+#result_container {
+    display: none;
+}
+#processing {
+    display: none;
+}
+#gifContainer{
+    display: none;
+}

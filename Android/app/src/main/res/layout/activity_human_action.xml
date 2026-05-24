@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0b071a"
+    tools:context=".HumanActionActivity">
+
+    <!-- LAYER 1: CONVERSATIONAL AI CHAT SCREEN -->
+    <LinearLayout
+        android:id="@+id/chatMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Custom Sleek AI Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#1a103c"
+            android:paddingHorizontal="16dp">
+
+            <!-- AI Agent Status Details -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true">
+
+                <!-- Glowing AI Icon -->
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_chat_bubble_ai"
+                    android:text="🧠"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lumat.net"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="2dp">
+
+                        <!-- Pulsating Online Dot -->
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@drawable/bg_chat_bubble_user"
+                            android:backgroundTint="#00FF66"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Human Action Recognition"
+                            android:textColor="#00FF66"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HAR v3.0"
+                android:textColor="#a855f7"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <!-- Scrolling Chat Log Thread -->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/chatScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:background="#0b071a">
+
+            <LinearLayout
+                android:id="@+id/chatLogLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:animateLayoutChanges="true">
+                <!-- Programmatically populated chat items -->
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- Dynamic Action Control Panel -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#120c27"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXPERT AI CONTROLS"
+                android:textColor="#8b82a0"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Mode Selector Switch Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:paddingHorizontal="4dp">
+
+                <TextView
+                    android:id="@+id/modeStatusLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Prediction Mode: OFFLINE (On-Device Lite)"
+                    android:textColor="#a855f7"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchDetectionMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    app:useMaterialThemeColors="true" />
+            </LinearLayout>
+
+            <!-- Chat Input Bar Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#1b123a"
+                android:padding="6dp"
+                android:layout_marginBottom="12dp">
+
+                <!-- Media Picker Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMediaPicker"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:text="📂"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:backgroundTint="#2d1d5e"
+                    app:cornerRadius="22dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="0dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- Display selected video name or hint -->
+                <TextView
+                    android:id="@+id/tvSelectedVideo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Select a video file..."
+                    android:textColor="#8b82a0"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:paddingHorizontal="4dp"/>
+
+                <!-- Predict/Upload Video Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUploadPredict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Predict (Local)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    app:backgroundTint="#a855f7"
+                    app:cornerRadius="20dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingHorizontal="14dp"/>
+            </LinearLayout>
+
+            <!-- Scrolling Helper Chips -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Real-Time Camera Chip -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/chipRealtimeCamera"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:text="🎥 Real-Time HAR"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        app:backgroundTint="#3a206c"
+                        app:strokeColor="#a855f7"
+                        app:strokeWidth="1dp"
+                        android:layout_marginRight="8dp"
+                        app:cornerRadius="17dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"/>
+
+                    <!-- Select Model Chip -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/chipChangeModel"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:text="🧠 Choose Model"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        app:backgroundTint="#1a103c"
+                        app:strokeColor="#3a206c"
+                        app:strokeWidth="1dp"
+                        android:layout_marginRight="8dp"
+                        app:cornerRadius="17dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"/>
+
+                    <!-- Download Sample Chip -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/chipDownloadSample"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:text="📥 Download Clip"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        app:backgroundTint="#1a103c"
+                        app:strokeColor="#3a206c"
+                        app:strokeWidth="1dp"
+                        android:layout_marginRight="8dp"
+                        app:cornerRadius="17dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"/>
+
+                    <!-- Stream YouTube Chip -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/chipStreamYoutube"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:text="🔗 Stream YouTube"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        app:backgroundTint="#1a103c"
+                        app:strokeColor="#3a206c"
+                        app:strokeWidth="1dp"
+                        app:cornerRadius="17dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

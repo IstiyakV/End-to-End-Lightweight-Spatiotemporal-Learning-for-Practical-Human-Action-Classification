@@ -222,7 +222,7 @@ Desktop-App/
 │   ├── checkpoints/          # Preloaded model weights
 │   │   ├── ucf101_paper_x112_b16_l2_d30_300k_best.pth  # R(2+1)D-Light (300K, ~3.53 MB)
 │   │   ├── ucf101_3dcnn_best.pth                       # Plain 3D CNN (292K, ~3.52 MB)
-│   │   └── r3d_18_kinetics_best.pth                    # [NOTE: Exceeds GitHub 100MB limit. Download from Zenodo]
+│   │   └── r3d_18_kinetics_best.pth                    # [NOTE: Exceeds GitHub 100MB limit. Download from Google Drive (Link in main README)]
 │   ├── metrics/              # Pinned class accuracy and JSON metrics reports
 │   └── tensorboard/          # Saved training event logs for baselines
 ├── Sample-Test/              # Folder to drop video clips for local testing

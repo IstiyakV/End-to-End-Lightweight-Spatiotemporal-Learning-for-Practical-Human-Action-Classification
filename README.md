@@ -51,7 +51,7 @@ The local research workstation module containing the Tkinter-based interactive G
 * **Baseline Suite:** Preloaded with model weights discussed in the paper:
   1. `R(2+1)D-Light 300k` (303,576 parameters, 82.06% accuracy on UCF101)
   2. `Plain 3D CNN 292k` (292,325 parameters baseline)
-  3. `R3D-18 Backbone` *(Note: Exceeds GitHub's 100MB limit. Download the ~127MB weights from Zenodo)*
+  3. `R3D-18 Backbone` *(Note: Exceeds GitHub's 100MB limit. [Download the ~127MB weights from Google Drive](https://drive.google.com/drive/folders/1trLn6IUbMo0bZHRBSFoyu0O-hYnzXK3o?usp=sharing))*
 * **Logs & Metrics:** Complete TensorBoard run event logs and accuracy metrics reports.
 * **Auto-Launchers:** One-click double-click scripts (`run_gui.bat` / `run_gui.sh`) that set up virtual environments and install libraries.
 
@@ -83,7 +83,7 @@ Polished Jupyter Notebook training pipelines pre-configured to run on cloud T4 G
 │   ├── gui/                    # Sidebar layout frames and background thread services
 │   ├── har/                    # Core deep learning Torch package (config, models, loaders)
 │   ├── results/                # Checkpoints, metrics & curves
-│   │   ├── checkpoints/        # Note: 127MB R3D-18 Kinetics model is hosted on Zenodo
+│   │   ├── checkpoints/        # Note: 127MB R3D-18 Kinetics model is hosted on Google Drive
 │   ├── Sample-Test/            # Folder to drop video clips for local GUI testing
 │   ├── images/                 # User guide illustrated screenshots
 │   ├── run_gui.bat             # Windows one-click auto-setup batch script

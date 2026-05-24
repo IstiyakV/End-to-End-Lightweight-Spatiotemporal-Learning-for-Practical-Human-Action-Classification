@@ -6,17 +6,75 @@ This standalone module serves as an interactive deep learning research workbench
 
 ---
 
-## 🎨 Application Screenshots
+## 🎨 Application Screenshots & Interface Guide
+
+This native CustomTkinter workbench provides 5 advanced graphical panels, allowing researchers to fully control the deep learning lifecycle without writing a single line of code:
 
 ### 1. Unified Research Dashboard
 The main dashboard displays active project status, live model metrics, precision/recall bar charts, confusion matrices, and top-performing action classes:
 
 ![Research Dashboard](images/dashboard.png)
 
-### 2. Interactive Network Architect
-The network architect panel allows researchers to drag-and-drop or sequence layers (2D, 3D, and factorised (2+1)D residual blocks) and visually inspect parameter counts and shape propagation:
+### 2. Network Architect (Dynamic AST Layer-Sequencing)
+The **Network Architect** panel allows researchers to interactively design custom 3D neural topologies from scratch or load established defaults.
 
-![Network Architect](images/architect.png)
+![Network Architect](images/network_architect.png)
+
+* **Instructions & Actions:**
+  * **Quick Start Presets:** Click on *Paper Default*, *Lightweight*, *Deep*, or *Plain Conv3D* at the top to immediately load pre-configured neural baselines.
+  * **AST Layer Management:** Use the colored button shortcuts (`+ R(2+1)D`, `+ Conv3D`, `+ Pool`, `+ BN`, `+ Drop`) to add layers dynamically in the *Architecture Flow* list.
+  * **Interactive Customization:** Click on any layer block in the flow list to edit its properties (channels, kernel size, stride, padding) in the *Layer Properties* pane on the right.
+  * **Ordering & Management:** Select a layer block and click `▲ Up`, `▼ Down`, `✖ Del`, or `Reset` to reorder, delete, or clear the architecture structure.
+  * **Visual Summary:** Keep track of the *Output Shape* propagation and total accumulated parameter counts under the *Model Summary* pane.
+  * **Export / Import:** Click `💾 Save` to serialize your custom architecture layout to disk, or `📥 Load` to retrieve past work.
+
+### 3. Isolated Asynchronous Transfer Learning Module
+The **Transfer Learning** panel is dedicated to high-performance backbone tuning and feature extraction.
+
+![Transfer Learning](images/transfer_learning.png)
+
+* **Instructions & Actions:**
+  * **1. Backbone Ingestion:** Browse and load pre-trained 3D CNN backbones (e.g., `r3d_18_kinetics.pth`). Click `Ingest & Validate Backbone` to analyze layer architecture compatibility on CPU/GPU.
+  * **2. Custom Classification Head:** Select the target head architecture (e.g., *Paper Default*) to automatically bind the final classifier layer for UCF-101 (101 classes) or Kinetics-700.
+  * **3. Datasets & Space Optimizations:** Toggle `Use Lathe` to utilize compressed numpy vectors for accelerated I/O. Set your custom *Cache Folder* and *Raw Videos Path*.
+  * **4. Hyperparameter Settings:** Customize training options (Optimizer, Learning Rate, scheduler, target epochs, batch size, and Mixed Precision/AMP toggle to save VRAM).
+  * **5. Interactive Controls:** Click `▶ Train` to initiate the training loop, `⏸ Pause` to pause execution, `▶ Resume` to pick up where you left off, and `↺ Retrain` to reset and clear the training cache. Track metrics on the **Live Analytics Graph** canvas!
+
+### 4. State-of-the-Art Training Configuration
+The **Training** panel lets you configure full training parameters for training new networks from scratch.
+
+![Training Configuration](images/training_config.png)
+
+* **Instructions & Actions:**
+  * **Dataset Target Selection:** Toggle between the *UCF-101 Dataset* and *Kinetics-700 Dataset* tabs at the top to load dataset-specific setups.
+  * **Experiment & Paths:** Specify the experiment name (e.g., `ucf101_run`), video MP4 folders, and set whether to utilize lightning-fast cached inputs.
+  * **Spatiotemporal Parameters:** Customize visual constraints: *Image Size* (112, 128, 160, or 224), *Frames per Video* (depth), and *Frame Step* (temporal stride).
+  * **Hyperparameter & Optimization Panel:** Adjust training epochs, batch size, learning rate, and dropout probability. Select from advanced options: *Mixed Precision (FP16)* for memory savings, and allocate CPU *Data Workers* (0, 2, 4, 8) for parallel asynchronous loading.
+  * **Execution:** Choose your hardware target in the *Device* dropdown (e.g., `GPU 0: NVIDIA GeForce GTX 1660`) and hit `▶ Start Training` to deploy.
+
+### 5. Interactive Retraining & Fine-Tuning
+The **Retrain Model** panel enables loading existing checkpoints, inspecting their metadata, and carrying out focused fine-tuning or full-network retraining.
+
+![Retrain & Fine-Tune Model](images/retrain_model.png)
+
+* **Instructions & Actions:**
+  * **Model Checkpoint Info:** Click `Browse...` or select a PyTorch checkpoint file (`.pth`) from the local directories.
+  * **Checkpoint Analysis:** Click `Extract Checkpoint Details` to parse and show the model metadata (original trained epochs, validation accuracy, spatial image size, clip frame length, temporal step, and class counts).
+  * **Fine-Tuning Strategy:** Toggle between *Fine-Tune Classifier* (freezes the spatiotemporal feature backbone to train only the classification head, which is highly stable and fast) and *Full Retraining* (unfreezes all layers for comprehensive end-to-end backpropagation).
+  * **Hyperparameters & Paths:** Customize retraining epochs, learning rates, data caching, and Mixed Precision toggles. Select CPU workers for the dataloader.
+  * **Execution:** Verify the target *Device* (CPU/GPU) and click `▶ Start Retraining` to begin.
+
+### 6. Training Monitor & Live Console
+The **Monitor** panel is a dashboard that showcases live spatiotemporal training statistics.
+
+![Training Monitor](images/training_monitor.png)
+
+* **Instructions & Actions:**
+  * **Live Loss (Log Scale):** Graphing epoch loss dynamically on a logarithmic scale to visually capture training divergence or fine convergence.
+  * **Live Accuracy (%):** Displays real-time training and validation accuracy progression.
+  * **Learning Rate & Duration Curves:** Tracks optimizer step rates and epoch speeds (seconds per epoch) to detect server performance or scheduler stepping.
+  * **Execution Controls:** Control the training process directly with `⏸ Pause`, `▶ Resume`, and `🛑 Stop` buttons at the top.
+  * **Interactive Console & Logs:** Read detailed traceback logs, batch speed stats, and evaluation matrices inside the scrollable *Live Output Console*. Click the **TensorBoard** shortcut to spawn a local TensorBoard tracking instance!
 
 ---
 

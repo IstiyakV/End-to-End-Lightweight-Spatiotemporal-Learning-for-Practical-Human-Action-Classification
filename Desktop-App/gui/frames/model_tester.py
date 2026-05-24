@@ -71,7 +71,7 @@ class ModelTesterFrame(ctk.CTkFrame):
         self.import_model_btn.pack(side="right")
 
         # Segmented Control / Tabview inside left panel
-        self.tabview = ctk.CTkTabview(left, fg_color="transparent", height=230, corner_radius=10,
+        self.tabview = ctk.CTkTabview(left, fg_color="transparent", height=320, corner_radius=10,
                                        segmented_button_selected_color=COLORS["accent"],
                                        segmented_button_selected_hover_color=COLORS["accent"])
         self.tabview.pack(fill="both", expand=True, padx=15, pady=(10, 5))
@@ -111,6 +111,33 @@ class ModelTesterFrame(ctk.CTkFrame):
                                      fg_color=COLORS["input_bg"], border_color=COLORS["border"],
                                      height=32, placeholder_text="Paste YouTube link here...")
         self.yt_entry.pack(fill="x", padx=10, pady=5)
+
+        # YouTube suggestions panel
+        ctk.CTkLabel(tab_yt, text="💡 Test Suggestions (Click to load & copy):", 
+                     font=("Segoe UI", 11, "bold"), text_color=COLORS["accent"], anchor="w").pack(fill="x", padx=10, pady=(10, 2))
+        
+        suggest_frame = ctk.CTkFrame(tab_yt, fg_color="transparent")
+        suggest_frame.pack(fill="x", padx=10, pady=5)
+        suggest_frame.grid_columnconfigure((0, 1), weight=1)
+        
+        suggestions = [
+            ("Clip 1 (Action)", "https://www.youtube.com/watch?v=wOEKdWrtz6U"),
+            ("Clip 2 (Sports)", "https://www.youtube.com/watch?v=wIYD42DV3Ro"),
+            ("Clip 3 (Dance)", "https://www.youtube.com/watch?v=msXtQTh81jA"),
+            ("Clip 4 (Gym)", "https://www.youtube.com/watch?v=EnBQcffEKLc"),
+            ("Clip 5 (Run)", "https://www.youtube.com/watch?v=zVqvd6mhat8"),
+            ("Clip 6 (Fit)", "https://www.youtube.com/watch?v=wEVAlMTeyWc")
+        ]
+        
+        for idx, (label, url) in enumerate(suggestions):
+            row = idx // 2
+            col = idx % 2
+            btn = ctk.CTkButton(suggest_frame, text=label, font=("Segoe UI", 10),
+                                fg_color=COLORS["input_bg"], hover_color=COLORS["border"],
+                                border_width=1, border_color=COLORS["border"],
+                                text_color=COLORS["text"], corner_radius=6, height=26,
+                                command=lambda u=url: self._select_suggested_yt(u))
+            btn.grid(row=row, column=col, padx=4, pady=3, sticky="ew")
 
         ctk.CTkLabel(tab_yt, text="Note: Extracting stream metadata requires a stable internet connection.", 
                      font=("Segoe UI", 9), text_color=COLORS["text_dim"], wraplength=260, justify="left").pack(fill="x", padx=10, pady=5)
@@ -323,6 +350,21 @@ class ModelTesterFrame(ctk.CTkFrame):
                 ))
 
         threading.Thread(target=run, daemon=True).start()
+
+    def _select_suggested_yt(self, url):
+        self.yt_url_var.set(url)
+        try:
+            self.clipboard_clear()
+            self.clipboard_append(url)
+            self.status_lbl.configure(
+                text="✓ Loaded YouTube URL & copied to system clipboard!",
+                text_color=COLORS["success"]
+            )
+        except Exception as e:
+            self.status_lbl.configure(
+                text=f"Loaded YouTube URL (Clipboard copy failed: {e})",
+                text_color=COLORS["warning"]
+            )
 
     def _start_youtube(self):
         self._stop_gif()

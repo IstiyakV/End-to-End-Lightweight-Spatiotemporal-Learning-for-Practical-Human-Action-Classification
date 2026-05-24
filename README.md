@@ -14,6 +14,10 @@ This repository provides a unified visual computing framework spanning cloud API
 
 <br>
 
+<img src="Desktop-App/images/demo-playing.gif" width="700" alt="HAR Control Center Live Demo" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+
+<br>
+
 <a href="#-global-environment-quickstart">
   <img src="https://img.shields.io/badge/%E2%9A%A1%20Quick%20Installation-Click%20Here-blueviolet?style=for-the-badge&logo=quick" alt="Quick Installation">
 </a>

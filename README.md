@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Journal-The Visual Computer](https://img.shields.io/badge/Journal-The%20Visual%20Computer-blue.svg)](https://link.springer.com/)
-[![Zenodo DOI](https://img.shields.io/badge/Zenodo-DOI%20%5BZenodo%20DOI%5D-blue.svg)](https://zenodo.org/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20370030.svg)](https://doi.org/10.5281/zenodo.20370030)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
@@ -234,12 +234,11 @@ You can test the system with the following YouTube videos (also available in the
 
 ---
 
-## 📝 How to Register a Permanent Zenodo DOI
+## 📝 Official Zenodo DOI
 
-To register a permanent scientific DOI for this repository upon paper acceptance:
-1. Log in to [zenodo.org](https://zenodo.org/) using your **GitHub account**.
-2. Navigate to your Zenodo profile GitHub settings and toggle sync **On** for this repository.
-3. Publish a new GitHub release (e.g. `v1.0.0`). Zenodo will automatically archive the code, compile details, and assign a permanent DOI. Replace `[Zenodo DOI]` inside the paper manuscript and files.
+This repository, including the compiled packages, checkpoints, and complete source code, has been permanently archived and is accessible via Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20370030.svg)](https://doi.org/10.5281/zenodo.20370030)
 
 ---
 

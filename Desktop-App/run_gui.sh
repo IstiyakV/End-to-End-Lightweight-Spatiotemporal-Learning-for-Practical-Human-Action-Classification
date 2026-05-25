@@ -13,7 +13,7 @@ fi
 
 # Create virtual environment if it doesn't exist
 if [ ! -d "env" ]; then
-    echo "📦 Creating Virtual Environment (env)..."
+    echo "📦 Creating Virtual Environment [env]..."
     python3 -m venv env
     if [ $? -ne 0 ]; then
         echo "❌ ERROR: Failed to create virtual environment. Make sure python3-venv is installed."
@@ -30,7 +30,7 @@ echo "🔄 Upgrading pip..."
 python3 -m pip install --upgrade pip -q
 
 # Install dependencies
-echo "📥 Installing Pinned Dependencies (customtkinter, PyTorch, etc.)..."
+echo "📥 Installing Pinned Dependencies [customtkinter, PyTorch, etc.]..."
 echo "This may take a minute. Please wait..."
 pip install -r requirements.txt -q
 if [ $? -ne 0 ]; then

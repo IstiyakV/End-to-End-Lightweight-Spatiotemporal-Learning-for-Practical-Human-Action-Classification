@@ -88,7 +88,7 @@ Polished Jupyter Notebook training pipelines pre-configured to run on cloud T4 G
 │   ├── har/                    # Core deep learning Torch package (config, models, loaders)
 │   ├── results/                # Checkpoints, metrics & curves
 │   │   ├── checkpoints/        # Note: 127MB R3D-18 Kinetics model is hosted on Google Drive
-│   ├── Sample-Test/            # Folder to drop video clips for local GUI testing
+│   ├── Sample-Video/           # Folder containing sample videos and where users drop test clips
 │   ├── images/                 # User guide illustrated screenshots
 │   ├── run_gui.bat             # Windows one-click auto-setup batch script
 │   └── run_gui.sh              # Linux/macOS one-click auto-setup bash script
@@ -243,7 +243,7 @@ The **HAR Control Center** provides a complete, interactive, and code-free envir
 1. Navigate to the **Model Tester** tab.
 2. Click **📥 Load File** or select your trained model checkpoint from the drop-down menu (e.g., `R(2+1)D-Light 300k`).
 3. Select your inference mode:
-   - **Local Video:** Drop video files in the `Sample-Test/` folder, select your file from the drop-down, check **Generate Grad-CAM**, and click **Run Local Prediction**.
+   - **Local Video:** Drop video files in the `Sample-Video/` folder, select your file from the drop-down, check **Generate Grad-CAM**, and click **Run Local Prediction**.
    - **YouTube Stream:** Paste a streaming video link or click one of the **💡 Test Suggestions** to load it, and click **Stream & Detect Live**.
 4. The system loads the model weights and displays:
    - **Top-5 Class Probabilities** via graphical confidence level meters (e.g., `IceDancing: 92.4%`).

@@ -225,7 +225,7 @@ Desktop-App/
 │   │   └── r3d_18_kinetics_best.pth                    # [NOTE: Exceeds GitHub 100MB limit. Download from Google Drive (Link in main README)]
 │   ├── metrics/              # Pinned class accuracy and JSON metrics reports
 │   └── tensorboard/          # Saved training event logs for baselines
-├── Sample-Test/              # Folder to drop video clips for local testing
+├── Sample-Video/             # Folder containing sample videos and where users drop test clips
 ├── gui.py                    # Main app runner entrypoint
 ├── gui_settings.json         # Window placement and theme configurations
 ├── requirements.txt          # Python dependency library list
@@ -237,7 +237,7 @@ Desktop-App/
 
 ## 🎬 Testing Local Video Files
 
-1. Place any video file (`.mp4`, `.avi`, or `.mov`) inside the empty **`Sample-Test/`** folder.
+1. Place any video file (`.mp4`, `.avi`, or `.mov`) inside the **`Sample-Video/`** folder (preloaded with sample videos).
 2. Launch the application.
 3. Navigate to the **Model Tester** frame on the sidebar.
 4. Select one of the preloaded models (e.g., `R(2+1)D-Light 300k`).

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this codebase or pretrained models, please cite our article from The Visual Computer as follows:"
+message: "If you use this codebase or pretrained models, please cite our paper submitted to Journal of Real-Time Image Processing as follows:"
 authors:
   - family-names: "Hossain"
     given-names: "Kazi Md Istiyak"
@@ -35,7 +35,7 @@ preferred-citation:
     orcid: "https://orcid.org/0000-0001-6452-4303"
   - family-names: "Hasan"
     given-names: "Md Mahibul"
-  journal: "The Visual Computer"
+  journal: "Journal of Real-Time Image Processing"
   title: "End-to-End Lightweight Spatiotemporal Learning for Practical Human Action Classification"
   year: 2026
   publisher: "Springer Nature"

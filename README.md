@@ -2,13 +2,13 @@
 
 <div align="center">
 
-[![Journal-The Visual Computer](https://img.shields.io/badge/Journal-The%20Visual%20Computer-blue.svg)](https://link.springer.com/)
+[![Journal-Journal of Real-Time Image Processing](https://img.shields.io/badge/Journal-Journal%20of%20Real--Time%20Image%20Processing-blue.svg)](https://link.springer.com/journal/11554)
 [![DOI](https://zenodo.org//badge/DOI/10.5281/zenodo.20375718.svg)](https://doi.org/10.5281/zenodo.20375718)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 
-**Official open-source repository for the paper "End-to-End Lightweight Spatiotemporal Learning for Practical Human Action Classification" revised and resubmitted to The Visual Computer (Springer Nature).**
+**Official open-source repository for the paper "End-to-End Lightweight Spatiotemporal Learning for Practical Human Action Classification" submitted to Journal of Real-Time Image Processing (Springer Nature).**
 
 This repository provides a unified visual computing framework spanning cloud APIs, mobile edge devices, interactive desktop training gates, and cloud notebook clusters.
 
@@ -298,12 +298,24 @@ Please cite our journal publication in your research:
 @article{human_action_classification_2026,
   author    = {Kazi Md Istiyak Hossain and Md Fahim Razi Prantik and Rony Shaha and Kaushik Sarker and Md Mahibul Hasan},
   title     = {End-to-End Lightweight Spatiotemporal Learning for Practical Human Action Classification},
-  journal   = {The Visual Computer},
+  journal   = {Journal of Real-Time Image Processing},
   publisher = {Springer Nature},
   year      = {2026},
-  note      = {Submitted for Publication (Revised Resubmission)}
+  note      = {Submitted for Publication}
 }
 ```
 
 ---
-*Developed by the Authors for The Visual Computer journal submission.*
+
+## Authors & Affiliations
+
+This repository contains the official code implementation for the manuscript submitted to **Journal of Real-Time Image Processing**.
+
+* **Kazi Md Istiyak Hossain** (Faculty of Computing, Engineering and Science, University of South Wales, Pontypridd, CF37 1DL, UK)
+* **Md Fahim Razi Prantik** (School of Electronic and Information Engineering, Beihang University, Beijing, 100191, China)
+* **Rony Shaha** *(Corresponding Author)* (School of Electronic and Information Engineering, Beihang University, Beijing, 100191, China — ronyshaha63@buaa.edu.cn)
+* **Kaushik Sarker** *(Corresponding Author)* (School of Electronic and Information Engineering, Beihang University, Beijing, 100191, China — ksarker@buaa.edu.cn)
+* **Md Mahibul Hasan** (School of Information and Intelligent Science, Donghua University, Shanghai, 201620, China)
+
+---
+*Developed by the Authors for Journal of Real-Time Image Processing submission.*

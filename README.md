@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Journal-Journal of Real-Time Image Processing](https://img.shields.io/badge/Journal-Journal%20of%20Real--Time%20Image%20Processing-blue.svg)](https://link.springer.com/journal/11554)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20375718.svg)](https://doi.org/10.5281/zenodo.20375718)
+[![DOI](Desktop-App/images/zenodo.20375718.svg)](https://doi.org/10.5281/zenodo.20375718)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
@@ -285,7 +285,7 @@ The **HAR Control Center** allows you to perform serverless, high-speed spatiote
 
 This repository, including the compiled packages, checkpoints, and complete source code, has been permanently archived and is accessible via Zenodo:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20375718.svg)](https://doi.org/10.5281/zenodo.20375718)
+[![DOI](Desktop-App/images/zenodo.20375718.svg)](https://doi.org/10.5281/zenodo.20375718)
 
 ---
 

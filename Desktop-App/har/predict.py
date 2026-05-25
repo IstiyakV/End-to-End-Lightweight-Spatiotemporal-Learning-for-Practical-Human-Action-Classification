@@ -96,6 +96,7 @@ def load_model(checkpoint_path: str, device: str = config.DEVICE) -> Tuple[torch
                 model.is_colab = False
 
     model.load_state_dict(state_dict)
+    model.to(device)
     model.eval()
 
     val_acc = ckpt.get("val_accuracy", ckpt.get("best_val_acc", 0.0))

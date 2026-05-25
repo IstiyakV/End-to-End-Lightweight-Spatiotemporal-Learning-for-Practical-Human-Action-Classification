@@ -77,5 +77,7 @@ CHECKPOINT_METRIC = "val_accuracy"
 # ──────────────────────────────────────────────
 # Inference
 # ──────────────────────────────────────────────
-DEVICE = "cuda" if os.environ.get("FORCE_CPU") != "1" else "cpu"
+import torch
+DEVICE = "cuda" if (torch.cuda.is_available() and os.environ.get("FORCE_CPU") != "1") else "cpu"
 VIDEO_EXTENSIONS = {".avi", ".mp4", ".mov", ".mkv", ".webm"}
+

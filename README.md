@@ -252,35 +252,31 @@ The **HAR Control Center** provides a complete, interactive, and code-free envir
 
 
 <a id="youtube-inference"></a>
-## 📺 Real-Time YouTube Video Inference
+## 📺 Real-Time YouTube Video Inference (Desktop App)
 
-Our system enables serverless, high-speed testing of live YouTube streaming clips. The backend processes streams on-the-fly by parsing metadata without downloading raw video files. 
+The **HAR Control Center** allows you to perform serverless, high-speed spatiotemporal inference on live YouTube streaming clips. The application processes streams on-the-fly by parsing metadata without downloading raw video files to your local storage.
 
-### Launch Local Web Server:
-```bash
-cd Web-api
-pip install -r requirements.txt
-python app.py
-```
+### Step-by-Step YouTube Streaming Tutorial:
 
-### Stream Live YouTube Videos:
-1. Open your web browser and navigate to `http://localhost:5000/`.
-2. Scroll to the **YouTube Video Streaming** panel on the web interface.
-3. Paste any public YouTube link (e.g. `https://www.youtube.com/watch?v=xxxx`) into the text bar.
-4. Select your active model and click **Resolve and Stream**.
-5. The backend leverages `yt-dlp` to capture direct stream URLs, performs frame extraction, runs inference, and renders **spatiotemporal Grad-CAM heatmap overlay animations** directly in your browser.
-
-**Quick Testing URLs:**
-* [Dancing] https://www.youtube.com/watch?v=Tbv1a5vYI24
-* [Dancing] https://www.youtube.com/watch?v=wEVAlMTeyWc
-* [Sports] https://www.youtube.com/watch?v=m5q5pps_C7M
-* [Sports] https://www.youtube.com/watch?v=FKz_d9PbPcs
-* [Instrumental] https://www.youtube.com/watch?v=zVqvd6mhat8
-* [Sports] https://www.youtube.com/watch?v=msXtQTh81jA
-* [Sports] https://www.youtube.com/watch?v=wIYD42DV3Ro
-* [Sports] https://www.youtube.com/watch?v=EnBQcffEKLc
+1. **Launch the Application:** Double-click **`run_gui.bat`** (or execute `./run_gui.sh` on Linux/macOS) to spin up the local virtual environment and launch the Control Center.
+2. **Open the Model Tester Frame:** Click the **Model Tester** tab on the left sidebar.
+3. **Switch to YouTube Stream Mode:** Click the **YouTube Stream** tab at the top of the testing panel.
+4. **Load or Paste a Stream URL:**
+   - Paste any public YouTube link into the **YouTube Video Stream URL** input text bar (e.g. `https://www.youtube.com/watch?v=xxxx`).
+   - Alternatively, you can click on any of the **💡 Test Suggestions** (Clip 1 to Clip 8) in the grid at the bottom. This will automatically load the verified URL into the entry box and copy it to your clipboard for quick testing.
+5. **Select Your Active Model Checkpoint:**
+   - **Preloaded Models (Recommended):** Choose the preloaded compact factorised model **`R(2+1)D-Light (300K)`** (`ucf101_paper_x112_b16_l2_d30_300k_best.pth`) from the drop-down menu for high-speed, lightweight classification.
+   - **Heavy Pre-trained Backbones:** You can also run inference using the heavy, high-capacity **`R3D-18 (ResNet3D-18)`** model.
+     - *Note:* Because the R3D-18 weights file exceeds GitHub's 100MB upload limit, you can [download the ~127MB weights (`r3d_18_kinetics_best.pth`) and its configuration `.json` files from Google Drive](https://drive.google.com/drive/folders/1trLn6IUbMo0bZHRBSFoyu0O-hYnzXK3o?usp=sharing).
+     - Place the downloaded weight `.pth` and config `.json` files in the `results/checkpoints/` folder.
+     - In the app, click **📥 Load File** to browse and ingest the custom pre-trained checkpoint.
+6. **Deploy the Stream Analyzer:** Click the **Stream & Detect Live** button to initiate processing.
+   - The backend leverages `yt-dlp` to capture direct video stream chunks on-the-fly.
+   - It performs real-time uniform spatiotemporal frame-segment extraction and feedforward passes.
+   - The app will dynamically display the **Top-5 Class Probabilities** confident levels, chronologically chart action intervals in the **Activity Timeline Canvas**, and overlay **spatiotemporal Grad-CAM attention heatmaps** on the visual stream!
 
 ---
+
 
 <a id="zenodo-doi"></a>
 ## 📝 Official Zenodo DOI

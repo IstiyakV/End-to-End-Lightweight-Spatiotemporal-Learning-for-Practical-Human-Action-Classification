@@ -165,18 +165,25 @@ chmod +x run_gui.sh
 
 **Alternative Manual Loading:**
 If you prefer to bypass the one-click scripts and configure the environment manually:
-```bash
-# 1. Create and activate a virtual environment
-python -m venv env
-# On Windows: call env\Scripts\activate
-# On Linux/macOS: source env/bin/activate
 
-# 2. Install pinned dependencies
-pip install -r requirements.txt
-
-# 3. Launch the Control Center GUI
-python gui.py
-```
+1. **Create the virtual environment:**
+   ```bash
+   python -m venv env
+   ```
+2. **Activate the environment:**
+   * **Windows:**
+     ```cmd
+     call env\Scripts\activate
+     ```
+   * **Linux/macOS:**
+     ```bash
+     source env/bin/activate
+     ```
+3. **Install dependencies and launch:**
+   ```bash
+   pip install -r requirements.txt
+   python gui.py
+   ```
 
 ---
 

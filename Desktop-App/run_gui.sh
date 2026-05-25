@@ -1,4 +1,6 @@
 #!/bin/bash
+# Enable UTF-8 encoding just to be perfectly safe on older Linux distributions
+export LANG=en_US.UTF-8
 
 echo "==================================================="
 echo "🚀 HAR Control Center - Desktop GUI Launch Script"

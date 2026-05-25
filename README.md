@@ -253,13 +253,14 @@ python app.py
 5. The backend leverages `yt-dlp` to capture direct stream URLs, performs frame extraction, runs inference, and renders **spatiotemporal Grad-CAM heatmap overlay animations** directly in your browser.
 
 **Quick Testing URLs:**
-You can test the system with the following YouTube videos (also available in the Desktop App with 1-click clipboard copy):
-* `https://www.youtube.com/watch?v=wOEKdWrtz6U`
-* `https://www.youtube.com/watch?v=wIYD42DV3Ro`
-* `https://www.youtube.com/watch?v=msXtQTh81jA`
-* `https://www.youtube.com/watch?v=EnBQcffEKLc`
-* `https://www.youtube.com/watch?v=zVqvd6mhat8`
-* `https://www.youtube.com/watch?v=wEVAlMTeyWc`
+* [Dancing] https://www.youtube.com/watch?v=Tbv1a5vYI24
+* [Dancing] https://www.youtube.com/watch?v=wEVAlMTeyWc
+* [Sports] https://www.youtube.com/watch?v=m5q5pps_C7M
+* [Sports] https://www.youtube.com/watch?v=FKz_d9PbPcs
+* [Instrumental] https://www.youtube.com/watch?v=zVqvd6mhat8
+* [Sports] https://www.youtube.com/watch?v=msXtQTh81jA
+* [Sports] https://www.youtube.com/watch?v=wIYD42DV3Ro
+* [Sports] https://www.youtube.com/watch?v=EnBQcffEKLc
 
 ---
 

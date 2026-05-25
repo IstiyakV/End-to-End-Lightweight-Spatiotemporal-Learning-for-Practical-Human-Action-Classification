@@ -121,12 +121,14 @@ class ModelTesterFrame(ctk.CTkFrame):
         suggest_frame.grid_columnconfigure((0, 1), weight=1)
         
         suggestions = [
-            ("Clip 1 (Action)", "https://www.youtube.com/watch?v=wOEKdWrtz6U"),
-            ("Clip 2 (Sports)", "https://www.youtube.com/watch?v=wIYD42DV3Ro"),
-            ("Clip 3 (Dance)", "https://www.youtube.com/watch?v=msXtQTh81jA"),
-            ("Clip 4 (Gym)", "https://www.youtube.com/watch?v=EnBQcffEKLc"),
-            ("Clip 5 (Run)", "https://www.youtube.com/watch?v=zVqvd6mhat8"),
-            ("Clip 6 (Fit)", "https://www.youtube.com/watch?v=wEVAlMTeyWc")
+            ("Clip 1 (Dancing)", "https://www.youtube.com/watch?v=Tbv1a5vYI24"),
+            ("Clip 2 (Dancing)", "https://www.youtube.com/watch?v=wEVAlMTeyWc"),
+            ("Clip 3 (Sports)", "https://www.youtube.com/watch?v=m5q5pps_C7M"),
+            ("Clip 4 (Sports)", "https://www.youtube.com/watch?v=FKz_d9PbPcs"),
+            ("Clip 5 (Instrumental)", "https://www.youtube.com/watch?v=zVqvd6mhat8"),
+            ("Clip 6 (Sports)", "https://www.youtube.com/watch?v=msXtQTh81jA"),
+            ("Clip 7 (Sports)", "https://www.youtube.com/watch?v=wIYD42DV3Ro"),
+            ("Clip 8 (Sports)", "https://www.youtube.com/watch?v=EnBQcffEKLc")
         ]
         
         for idx, (label, url) in enumerate(suggestions):

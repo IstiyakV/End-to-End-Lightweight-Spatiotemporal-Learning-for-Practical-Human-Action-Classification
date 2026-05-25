@@ -14,7 +14,7 @@ authors:
     given-names: "Md Mahibul"
 title: "End-to-End Lightweight Spatiotemporal Learning for Practical Human Action Classification"
 version: 1.0.0
-doi: "10.5281/zenodo.20370030"
+doi: "10.5281/zenodo.20375718"
 date-released: 2026-05-23
 url: "https://github.com/IstiyakV/End-to-End-Lightweight-Spatiotemporal-Learning-for-Practical-Human-Action-Classification"
 preferred-citation:
@@ -35,4 +35,4 @@ preferred-citation:
   title: "End-to-End Lightweight Spatiotemporal Learning for Practical Human Action Classification"
   year: 2026
   publisher: "Springer Nature"
-  doi: "10.5281/zenodo.20370030"
+  doi: "10.5281/zenodo.20375718"

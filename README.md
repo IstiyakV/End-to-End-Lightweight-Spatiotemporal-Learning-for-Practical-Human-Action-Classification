@@ -206,32 +206,47 @@ To train or evaluate our compact models, download the official spatiotemporal vi
 ---
 
 <a id="training-testing"></a>
-## 🏋️ Model Training & Testing Guide
+## 🏋️ Interactive GUI Training & Testing Guide
 
-You can train and evaluate the spatiotemporal classifiers using either the local Python CLI scripts or the interactive **HAR Control Center** GUI app.
+The **HAR Control Center** provides a complete, interactive, and code-free environment to design, train, monitor, and test compact spatiotemporal deep learning models.
 
-### 1. Training from Scratch
-To start a PyTorch training session for our factorised `R(2+1)D-Light` (300k parameter) network on the UCF101 dataset:
-```bash
-cd Desktop-App
-python -m har.train --model r21d_light --epochs 100 --batch_size 8 --lr 0.0001
-```
+### 1. Interactive 3D Model Designing & Compilation
+1. Launch the application by double-clicking **`run_gui.bat`** (or executing `./run_gui.sh` on Linux/macOS).
+2. Navigate to the **Network Architect** tab on the left sidebar.
+3. Select an established baseline preset (e.g., **Paper Default (R(2+1)D)** or **Lightweight**) or dynamically construct custom 3D convolutions by clicking the layer injection buttons (`+ R(2+1)D`, `+ Conv3D`, `+ BN`, `+ Pool`).
+4. Customize parameters (channels, kernel size, stride, padding) directly by clicking layer blocks.
+5. Click **💾 Save** to serialize your custom architecture flow block.
 
-### 2. Evaluating Model Accuracy & Generalization
-To run a strict evaluation pass against the validation split, outputting Top-K accuracies, precision-recall metrics, and a confusion matrix:
-```bash
-cd Desktop-App
-python -m har.evaluate --model r21d_light --weight results/checkpoints/ucf101_paper_x112_b16_l2_d30_300k_best.pth
-```
+### 2. Launching Stateful Model Training
+1. Navigate to the **Training Configuration** tab on the sidebar.
+2. Select your target training dataset split (**UCF-101 Dataset** or **Kinetics-700 Dataset**).
+3. Specify the directory paths containing the raw video clips.
+4. Customize spatiotemporal vision constraints (e.g., *Image Size: 112*, *Frames per Clip: 16*, and *Frame Step: 2*).
+5. Configure training hyperparameters: epoch count, batch size, learning rate, dropout, and number of parallel CPU *Data Workers*.
+6. Enable **Mixed Precision (FP16)** to optimize GPU VRAM, select your hardware target (e.g. `GPU 0`), and click **▶ Start Training**.
 
-### 3. Spatiotemporal Visual Interpretability (Grad-CAM)
-To compute and export Grad-CAM spatiotemporal activation heatmap overlays explaining the model's focus during motion:
-```bash
-cd Desktop-App
-python -m har.gradcam --video Sample-Test/action.mp4 --weight results/checkpoints/ucf101_paper_x112_b16_l2_d30_300k_best.pth
-```
+### 3. Monitoring Training Metrics in Real-Time
+1. Navigate to the **Training Monitor & Live Console** tab.
+2. The panel renders interactive Matplotlib canvas graphs tracking:
+   - **Log-Scale Epoch Loss** (detects early convergence or divergence).
+   - **Training & Validation Accuracy (%)** (monitors overfitting).
+   - **Learning Rate Decays & Epoch Processing Duration (seconds/epoch)**.
+3. Read active stdout training/validation log outputs in the scrollable console, or click **TensorBoard** to spawn local TensorBoard instances.
+4. Utilize direct interactive widgets: **⏸ Pause**, **▶ Resume**, or **🛑 Stop** to control the active PyTorch thread on-the-fly.
+
+### 4. Running Real-Time Inference & Spatiotemporal Visualizations
+1. Navigate to the **Model Tester** tab.
+2. Click **📥 Load File** or select your trained model checkpoint from the drop-down menu (e.g., `R(2+1)D-Light 300k`).
+3. Select your inference mode:
+   - **Local Video:** Drop video files in the `Sample-Test/` folder, select your file from the drop-down, check **Generate Grad-CAM**, and click **Run Local Prediction**.
+   - **YouTube Stream:** Paste a streaming video link or click one of the **💡 Test Suggestions** to load it, and click **Stream & Detect Live**.
+4. The system loads the model weights and displays:
+   - **Top-5 Class Probabilities** via graphical confidence level meters (e.g., `IceDancing: 92.4%`).
+   - **Activity Timeline Canvas** mapping chronological action transitions across long video clips.
+   - **Real-Time Spatiotemporal Grad-CAM Visualizations** overlaying high-attention motion heatmaps.
 
 ---
+
 
 <a id="youtube-inference"></a>
 ## 📺 Real-Time YouTube Video Inference

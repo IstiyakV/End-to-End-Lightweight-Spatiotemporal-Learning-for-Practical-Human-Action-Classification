@@ -64,9 +64,11 @@ The production Gunicorn/Flask cloud REST API and interactive web dashboard.
 
 ### 3. [📂 Android](./Android)
 The native Gradle-based Android Studio mobile edge client.
+* **Illustrated Documentation:** See the [detailed Android user guide and screenshots](./Android/README.md) for a complete visual breakdown.
 * **Camera Overlay HUD:** Operates a real-time camera stream overlay HUD processing sub-20ms frame classification queries.
 * **Conversational Helper:** Chat UI interface integrating action predictions into help assistance dialogs.
 * **Compiled Package:** Includes `apk/LUMAT.apk` ready for direct mobile installation.
+
 
 ### 4. [📂 Google-Colab](./Google-Colab)
 Polished Jupyter Notebook training pipelines pre-configured to run on cloud T4 GPUs:

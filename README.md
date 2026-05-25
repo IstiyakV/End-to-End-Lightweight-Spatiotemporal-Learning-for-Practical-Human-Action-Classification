@@ -224,6 +224,9 @@ The **HAR Control Center** provides a complete, interactive, and code-free envir
 4. Customize spatiotemporal vision constraints (e.g., *Image Size: 112*, *Frames per Clip: 16*, and *Frame Step: 2*).
 5. Configure training hyperparameters: epoch count, batch size, learning rate, dropout, and number of parallel CPU *Data Workers*.
 6. Enable **Mixed Precision (FP16)** to optimize GPU VRAM, select your hardware target (e.g. `GPU 0`), and click **▶ Start Training**.
+   
+> ⚠️ **Stateful Control Tip:** After clicking **▶ Start Training**, if you notice that the training execution doesn't start immediately or there is no batch progress displaying in the live console log, simply navigate to the **Training Monitor** tab and click the **▶ Resume** button to trigger the active PyTorch training loop thread.
+
 
 ### 3. Monitoring Training Metrics in Real-Time
 1. Navigate to the **Training Monitor & Live Console** tab.

@@ -37,6 +37,16 @@ python -m pip install --upgrade pip -q
 :: Install dependencies
 echo 📥 Installing Pinned Dependencies [customtkinter, PyTorch, etc.]...
 echo This may take a minute. Please wait...
+
+where nvidia-smi >nul 2>&1
+if %errorlevel% equ 0 (
+    echo 🟢 NVIDIA GPU detected via nvidia-smi!
+    echo ⚡ Installing CUDA-accelerated PyTorch [v12.1] for hardware acceleration...
+    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+) else (
+    echo ℹ️ No NVIDIA GPU detected. Installing standard CPU-only PyTorch...
+)
+
 pip install -r requirements.txt
 if %errorlevel% neq 0 (
     echo ❌ ERROR: Dependency installation failed.

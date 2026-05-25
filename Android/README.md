@@ -62,6 +62,48 @@ We have compiled and packaged a pre-built Android release binary for rapid evalu
 
 ---
 
+## 🔨 Compiling & Building the APK from Source
+
+If you wish to compile the application from scratch or customize the on-device interface, follow these steps to build the APK using Android Studio:
+
+### 1. Download & Install Android Studio
+1. Navigate to the official developer portal: [Android Studio Downloads](https://developer.android.com/studio).
+2. Download the installer matching your operating system (Windows, macOS, or Linux).
+3. Run the installer and complete the setup. **Recommended:** Choose the *Standard Installation* which automatically installs the latest Android SDK, SDK Build-Tools, and virtual device emulators.
+
+### 2. Import the Project into Android Studio
+1. Launch Android Studio.
+2. On the welcome screen, click **Open** (or navigate to **File > Open** inside the IDE).
+3. Navigate to the root directory where you cloned this repository and select the **`Android`** folder (containing `build.gradle` and `settings.gradle`).
+4. Click **OK**. Android Studio will import the project and automatically trigger a **Gradle Sync** to download the required PyTorch Mobile Lite libraries, OpenCV SDK dependencies, and system build plugins. *(Ensure you have a stable internet connection).*
+
+### 3. Configure PyTorch Mobile Lite Weights
+1. Ensure the optimized PyTorch Mobile Lite model weights file (`ucf101_run_best.ptl` or similar) is present in the assets directory.
+2. If the folder or weights are missing, copy your serialized `.ptl` checkpoint into:
+   ```text
+   Android/app/src/main/assets/ucf101_run_best.ptl
+   ```
+
+### 4. Build the Release / Debug APK
+1. **To build a Debug APK (Fastest):**
+   - Click on the **Build** menu in the top menu bar.
+   - Select **Build Bundle(s) / APK(s) > Build APK(s)**.
+   - Android Studio will compile the Gradle pipeline. Once complete, a popup notification will appear in the bottom-right corner. Click **locate** to open the target folder containing the compiled debug binary (`app-debug.apk`).
+2. **To compile a Signed Release APK:**
+   - Click **Build > Generate Signed Bundle / APK...**.
+   - Select **APK** and click **Next**.
+   - Select or create a secure Keystore Path, enter password credentials, and select the **release** build variant.
+   - Click **Finish** to compile the optimized production-ready release APK.
+
+### 5. Install & Run on Device
+* **Hardware Device (Recommended):**
+  1. Enable **Developer Options** and turn on **USB Debugging** on your Android smartphone (go to *Settings > About Phone*, tap *Build Number* 7 times, then go to *System > Developer Options*).
+  2. Connect your phone to your workstation via USB.
+  3. Select your device from the hardware dropdown menu at the top of Android Studio, and click the green **Run (▶)** button to compile, deploy, and launch the HUD session instantly!
+* **Software Emulator:** You can also run the app inside a simulated environment by creating a Virtual Device in the **Device Manager** panel and clicking the **Run (▶)** button.
+
+---
+
 ## 🛠️ Folder Structure & Architecture
 
 ```text

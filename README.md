@@ -311,11 +311,22 @@ Please cite our journal publication in your research:
 
 This repository contains the official code implementation for the manuscript submitted to **Journal of Real-Time Image Processing**.
 
-* **Kazi Md Istiyak Hossain** (Faculty of Computing, Engineering and Science, University of South Wales, Pontypridd, CF37 1DL, UK)
-* **Md Fahim Razi Prantik** (School of Electronic and Information Engineering, Beihang University, Beijing, 100191, China)
-* **Rony Shaha** *(Corresponding Author)* (School of Electronic and Information Engineering, Beihang University, Beijing, 100191, China — ronyshaha63@buaa.edu.cn)
-* **Kaushik Sarker** *(Corresponding Author)* (School of Electronic and Information Engineering, Beihang University, Beijing, 100191, China — ksarker@buaa.edu.cn)
-* **Md Mahibul Hasan** (School of Information and Intelligent Science, Donghua University, Shanghai, 201620, China)
+* **Kazi Md Istiyak Hossain**
+  * Faculty of Computing, Engineering and Science, University of South Wales, Pontypridd, CF37 1DL, UK
+  * Email: kmistiyakhossain@gmail.com
+* **Md Fahim Razi Prantik**
+  * School of Electronic and Information Engineering, Beihang University, Beijing, 100191, China
+  * State Key Laboratory of CNS/ATM, Beihang University, Beijing, 100191, China
+  * Email: fahimraziprantik@buaa.edu.cn
+* **Rony Shaha** *(Corresponding Author)*
+  * School of Electronic and Information Engineering, Beihang University, Beijing, 100191, China
+  * Email: ronyshaha63@buaa.edu.cn
+* **Kaushik Sarker** *(Corresponding Author)*
+  * School of Electronic and Information Engineering, Beihang University, Beijing, 100191, China
+  * Email: ksarker@buaa.edu.cn
+* **Md Mahibul Hasan**
+  * School of Information and Intelligent Science, Donghua University, Shanghai, 201620, China
+  * Email: mmhasan@mail.dhu.edu.cn
 
 ---
 *Developed by the Authors for Journal of Real-Time Image Processing submission.*

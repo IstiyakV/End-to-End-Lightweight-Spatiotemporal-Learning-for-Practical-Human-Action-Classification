@@ -37,7 +37,7 @@ python -m pip install --upgrade pip -q
 :: Install dependencies
 echo 📥 Installing Pinned Dependencies [customtkinter, PyTorch, etc.]...
 echo This may take a minute. Please wait...
-pip install -r requirements.txt -q
+pip install -r requirements.txt
 if %errorlevel% neq 0 (
     echo ❌ ERROR: Dependency installation failed.
     pause

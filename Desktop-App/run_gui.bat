@@ -1,4 +1,6 @@
 @echo off
+:: Enable UTF-8 encoding so emojis render correctly in Windows Command Prompt
+chcp 65001 >nul
 echo ===================================================
 echo 🚀 HAR Control Center - Desktop GUI Launch Script
 echo ===================================================

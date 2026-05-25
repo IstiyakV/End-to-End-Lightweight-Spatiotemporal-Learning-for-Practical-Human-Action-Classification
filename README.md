@@ -18,7 +18,7 @@ This repository provides a unified visual computing framework spanning cloud API
 
 <br>
 
-<a href="#-global-environment-quickstart">
+<a href="#quickstart">
   <img src="https://img.shields.io/badge/%E2%9A%A1%20Quick%20Installation-Click%20Here-blueviolet?style=for-the-badge&logo=quick" alt="Quick Installation">
 </a>
 
@@ -27,19 +27,20 @@ This repository provides a unified visual computing framework spanning cloud API
 ---
 
 ## 📑 Table of Contents
-- [The Four-Folder Repository Architecture](#-the-four-folder-repository-architecture)
-- [Codebase Directory Layout](#-codebase-directory-layout)
-- [Application Screenshots & Interface Guide](#-application-screenshots--interface-guide)
-- [System Requirements & Prerequisites](#-system-requirements--prerequisites)
-- [Global Environment Quickstart](#-global-environment-quickstart)
-- [Dataset Ingestion & Official Downloads](#-dataset-ingestion--official-downloads)
-- [Model Training & Testing Guide](#-model-training--testing-guide)
-- [Real-Time YouTube Video Inference](#-real-time-youtube-video-inference)
-- [How to Register a Permanent Zenodo DOI](#-how-to-register-a-permanent-zenodo-doi)
-- [Citation](#-citation)
+- [The Four-Folder Repository Architecture](#four-folder)
+- [Codebase Directory Layout](#directory-layout)
+- [Application Screenshots & Interface Guide](#screenshots)
+- [System Requirements & Prerequisites](#requirements)
+- [Global Environment Quickstart](#quickstart)
+- [Dataset Ingestion & Official Downloads](#dataset-ingestion)
+- [Model Training & Testing Guide](#training-testing)
+- [Real-Time YouTube Video Inference](#youtube-inference)
+- [How to Register a Permanent Zenodo DOI](#zenodo-doi)
+- [Citation](#citation)
 
 ---
 
+<a id="four-folder"></a>
 ## 🚀 The Four-Folder Repository Architecture
 
 To ensure structured navigation for researchers, developers, and peer-reviewers, this repository is organized into exactly **four primary folders**:
@@ -74,6 +75,7 @@ Polished Jupyter Notebook training pipelines pre-configured to run on cloud T4 G
 
 ---
 
+<a id="directory-layout"></a>
 ## 📂 Codebase Directory Layout
 
 ```text
@@ -96,6 +98,7 @@ Polished Jupyter Notebook training pipelines pre-configured to run on cloud T4 G
 
 ---
 
+<a id="screenshots"></a>
 ## 🎨 Application Screenshots & Interface Guide
 
 Our **HAR Control Center** (Desktop-App) provides an interactive deep learning research workbench. Here is a glimpse of the powerful visual features you can use without writing any code:
@@ -114,6 +117,7 @@ Our **HAR Control Center** (Desktop-App) provides an interactive deep learning r
 
 ---
 
+<a id="requirements"></a>
 ## 📋 System Requirements & Prerequisites
 
 Before running the application, make sure your system satisfies the following hardware and software specifications:
@@ -136,8 +140,7 @@ The application requires **Python 3.9, 3.10, or 3.11** (Python 3.10/3.11 recomme
 
 ---
 
-<div id="-global-environment-quickstart"></div>
-
+<a id="quickstart"></a>
 ## ⚙️ Global Environment Quickstart
 
 You can easily set up the project locally. 
@@ -164,6 +167,7 @@ chmod +x run_gui.sh
 
 ---
 
+<a id="dataset-ingestion"></a>
 ## 📊 Dataset Ingestion & Official Downloads
 
 To train or evaluate our compact models, download the official spatiotemporal video benchmarks from the following verified archives:
@@ -181,6 +185,7 @@ To train or evaluate our compact models, download the official spatiotemporal vi
 
 ---
 
+<a id="training-testing"></a>
 ## 🏋️ Model Training & Testing Guide
 
 You can train and evaluate the spatiotemporal classifiers using either the local Python CLI scripts or the interactive **HAR Control Center** GUI app.
@@ -208,6 +213,7 @@ python -m har.gradcam --video Sample-Test/action.mp4 --weight results/checkpoint
 
 ---
 
+<a id="youtube-inference"></a>
 ## 📺 Real-Time YouTube Video Inference
 
 Our system enables serverless, high-speed testing of live YouTube streaming clips. The backend processes streams on-the-fly by parsing metadata without downloading raw video files. 
@@ -237,6 +243,7 @@ You can test the system with the following YouTube videos (also available in the
 
 ---
 
+<a id="zenodo-doi"></a>
 ## 📝 Official Zenodo DOI
 
 This repository, including the compiled packages, checkpoints, and complete source code, has been permanently archived and is accessible via Zenodo:
@@ -245,6 +252,7 @@ This repository, including the compiled packages, checkpoints, and complete sour
 
 ---
 
+<a id="citation"></a>
 ## 🎓 Citation
 
 Please cite our journal publication in your research:

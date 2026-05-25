@@ -34,6 +34,12 @@ datasets/
 results/
 Upload/
 
+# Explicitly allow tracking of trained/pretrained results and checkpoints in Desktop-App
+!Desktop-App/results/
+!Desktop-App/results/**
+!Desktop-App/results/**/*.pth
+
+
 # IDE / Editors
 .idea/
 .vscode/

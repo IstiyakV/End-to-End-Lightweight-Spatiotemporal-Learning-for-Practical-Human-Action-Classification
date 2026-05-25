@@ -39,6 +39,11 @@ Upload/
 !Desktop-App/results/**
 !Desktop-App/results/**/*.pth
 
+# Explicitly allow tracking of sample videos in Desktop-App
+!Desktop-App/Sample-Video/
+!Desktop-App/Sample-Video/**
+!Desktop-App/Sample-Video/**/*.mp4
+
 
 # IDE / Editors
 .idea/

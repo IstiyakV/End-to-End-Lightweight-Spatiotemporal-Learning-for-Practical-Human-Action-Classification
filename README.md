@@ -176,7 +176,8 @@ To train or evaluate our compact models, download the official spatiotemporal vi
   * **Official Portal:** [Kinetics Dataset on DeepMind](https://github.com/google-deepmind/kinetics-dataset)
   * **Consolidated Hugging Face Host:** [Kinetics-700 HF Dataset Archive](https://huggingface.co/datasets/atalaydenknalbant/Kinetics-700)
   
-*Note: Our custom multi-threaded downloader inside `Google-Colab/Kinetics700_HAR_Pipeline.ipynb` is pre-configured to stochastically fetch and downscale these Kinetics-700 archives on-the-fly to bound your local SSD footprint.*
+> 💡 **Recommended Tool: Standalone Kinetics-700 Downloader GUI**
+> To fully automate the complex pipeline of downloading and decompressing the massive 960GB Kinetics-700 dataset, we have open-sourced a companion tool: the [Kinetics-700 Dataset Downloader & Manager](https://github.com/IstiyakV/Kinetics-700-Dataset-Downloader-and-Manager). This interactive desktop application utilizes Temporal Segment Networks (TSN) frame-sampling logic to aggressively shrink the dataset footprint from **960GB down to an optimized 20GB on-the-fly**, making the dataset perfectly scalable for standard workstation SSDs.
 
 ---
 
